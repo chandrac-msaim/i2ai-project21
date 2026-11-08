@@ -1,6 +1,6 @@
 # Diagrams
 
-Architecture and database diagrams for the Gray DI Degree Pathway Advisor. GitHub draws the diagrams below directly.
+Architecture, agent flow, schedule lifecycle and database diagrams for the Gray DI Degree Pathway Advisor. GitHub draws the diagrams below directly.
 Database schema: PostgreSQL, schema `advisor` (see `db/schema.sql`).
 
 ## Architecture
@@ -40,6 +40,38 @@ flowchart TB
   VS --> PG
   LLM --> OL
   A5 --> MP
+```
+
+## Agent flow
+
+Every agent runs the same loop. The LLM is called at most once per run, and only to word the result.
+
+```mermaid
+flowchart LR
+  G["Goal<br/>(student or schedule)"] --> P["Plan<br/>read data with allowed tools"]
+  P --> D["Decide<br/>rules / MiniLM ranking"]
+  D --> C{"Check<br/>rule engine"}
+  C -- "problems, attempt < 3" --> D
+  C -- "accepted" --> S["Save<br/>to PostgreSQL"]
+  S --> E["Explain<br/>one LLM call, template fallback"]
+  E --> L["Log<br/>agent_runs + audit_log"]
+```
+
+## Schedule lifecycle
+
+Only the student's own advisor can approve or reject a submitted schedule.
+
+```mermaid
+stateDiagram-v2
+  [*] --> draft: Schedule agent builds (54 units)
+  draft --> draft: Student edits, rules re-checked
+  draft --> submitted: Student submits, Compliance agent passes
+  draft --> discarded: Student discards
+  draft --> superseded: New version built
+  submitted --> approved: Advisor approves, email sent
+  submitted --> rejected: Advisor rejects with comment, email sent
+  rejected --> draft: Student revises (new version)
+  approved --> [*]
 ```
 
 ## Database (1 of 3): programs, tracks and course catalog

@@ -8,13 +8,24 @@ CMU MS in AI Systems Management program.
 
 ## What it does
 
-| Function | What it does on its own | Where AI is used |
-|---|---|---|
-| 1. Requirements (degree audit) | Reads the transcript, computes QPA and units, shows what core and elective requirements are done or remaining | None (rules) |
-| 2. Electives | Ranks electives that fit the student's interests (typed, or taken from an uploaded resume or transcript) | Embeddings (MiniLM + pgvector); a small LLM only extracts interests and words the explanation |
-| 3. Schedule builder | Builds a draft within the unit rules, checks prerequisites, offered terms and seats, and re-checks every change the student makes | None (rules) |
-| 4. Risk flags | Flags problems such as low QPA, unit overload, a full section or a missing prerequisite | The local LLM (Ollama) words the flag |
-| 5. Compliance | Runs 7 rule checks before the student submits and again when the advisor reviews | None (rules) |
+Five agents share one loop: plan, decide, check (retry up to 3 times), save, explain. Every run is logged in `agent_runs` and `audit_log`.
+
+| # | Agent | What the rules do (no AI) | Where AI is used |
+|---|-------|---------------------------|------------------|
+| 1 | Requirements | Computes completed / remaining core and elective units, QPA and earliest graduation term from the student's record | None. Pure arithmetic, so the dashboard never waits on a model |
+| 2 | Electives | Filters out courses already taken or not offered; ranks by weights stored in `rule_settings` | **MiniLM embeddings + pgvector** match each student interest to courses. **Local LLM** extracts up to 5 interest labels from the resume and undergrad text (keyword fallback) and writes a one-line reason for each top course |
+| 3 | Schedule builder | Builds the draft to 54 units, validates with the rule engine, drops or swaps courses and retries; re-checks every student change | **Local LLM** writes the "How the AI built this" explanation (template fallback) |
+| 4 | Risk flags | Rules and thresholds from `rule_settings` decide which flags exist | **Local LLM** words each flag and suggests an advisor action. No flags means no LLM call |
+| 5 | Compliance | Submission rules (54 units; 55 to 60 only with QPA above 3.50; over 60 blocked) and approval (only the student's own advisor can decide) | **Local LLM** writes the opening paragraph of the approval / rejection email. The student's name is added in code afterwards |
+
+### Why AI is used only for language and similarity
+
+Rules decide, AI suggests, only an advisor approves. The AI never changes a unit count, a flag, a QPA or a decision.
+
+- At most one LLM call per agent run.
+- Names are removed before any text reaches the model.
+- If the answer contains numbers that are not in the facts, or is malformed, the system uses the template text instead.
+- With Ollama switched off, everything still works with templates and keyword matching.
 
 **How decisions stay safe**
 
@@ -64,7 +75,7 @@ This project was built with AI coding assistance (Claude Code), reviewed and tes
 | Tool | Notes |
 |---|---|
 | Docker Desktop | Start it and wait for "Engine running" |
-| Python 3.14.3 | For the backend and the data scripts |
+| Python 3.14.3 | For the backend and the data scripts (the version this project was tested on) |
 | Node.js 20 or newer | For the React frontend |
 | Git | To clone the repository |
 | MiniLM embedding model | Downloaded automatically the first time you run `embed_courses.py` (about 90 MB, then cached). Needs internet once |
@@ -72,9 +83,58 @@ This project was built with AI coding assistance (Claude Code), reviewed and tes
 
 A laptop with 16 GB RAM is comfortable.
 
+### Install the tools (first time only)
+
+Skip any tool you already have. After installing, **open a new terminal** so the new programs are found.
+
+**Windows**
+
+1. **Git:** download from git-scm.com and accept the defaults.
+2. **Python 3.14.3:** download from python.org. On the first installer screen, tick **"Add python.exe to PATH"**.
+3. **Node.js (LTS, version 20 or newer):** download from nodejs.org and accept the defaults.
+4. **Docker Desktop:** download "Docker Desktop for Windows" from docker.com.
+   - Keep **"Use WSL 2 instead of Hyper-V"** ticked (the default). WSL 2 is a lightweight Linux that Docker needs inside Windows.
+   - If the installer asks to enable WSL or "Virtual Machine Platform", agree, then **restart** the computer.
+   - Open Docker Desktop and wait until it says **"Engine running"** (about one minute; the first start can take longer).
+   - If Docker Desktop reports a WSL or virtualization error, run `wsl --update` in PowerShell (as administrator) and open Docker Desktop again. If it still fails, turn on virtualization in the BIOS ("Intel Virtualization Technology" or "SVM Mode").
+5. **Ollama:** download from ollama.com and run the installer. It runs in the background (tray icon).
+
+**macOS** (with Homebrew, https://brew.sh)
+
+```bash
+brew install git node
+brew install python@3.14            # or download Python from python.org
+brew install --cask docker          # Docker Desktop; open it once and wait for "Engine running"
+brew install ollama                 # or download the Ollama app from ollama.com
+```
+
+Docker Desktop and the images used here work on both Apple Silicon and Intel Macs.
+
+**Check the installation** (all five must print a version; `docker version` must show both Client and Server):
+
+```
+git --version
+python --version        # macOS: python3 --version
+node --version
+docker version
+ollama --version
+```
+
+## Get the code
+
+The repository is private: you must be added as a collaborator, then sign in to GitHub when Git asks (browser
+sign-in, or a personal access token as the password).
+
+```
+git clone https://github.com/chandrac-msaim/i2ai-project21.git graydi-advisor
+cd graydi-advisor
+```
+
+You can use any folder name. All commands below are run from this project folder.
+
 ## Setup (first time only)
 
-Open a terminal in the project folder (`graydi-advisor`).
+Open a terminal in the project folder.
 
 **Windows (PowerShell)**
 
@@ -119,8 +179,10 @@ Expected: **129** students.
 The MiniLM embedding model (`sentence-transformers/all-MiniLM-L6-v2`, about 90 MB) is downloaded from Hugging Face
 **once**, then cached on your machine. No account or token is needed.
 
-1. **Connect to the internet** and make sure `.env` does **not** contain `HF_HUB_OFFLINE=1` (the sample
-   `.env.example` does not). That setting blocks downloads.
+1. **Connect to the internet** and make sure `HF_HUB_OFFLINE` is not set: `.env` must not contain `HF_HUB_OFFLINE=1`
+   (the sample `.env.example` does not), and `$env:HF_HUB_OFFLINE` (Windows) or `echo $HF_HUB_OFFLINE` (macOS) must
+   print nothing. That setting blocks downloads. In an old terminal session, clear it with
+   `Remove-Item Env:HF_HUB_OFFLINE` (Windows) or `unset HF_HUB_OFFLINE` (macOS), or open a new terminal.
 2. With the virtual environment active, run the download and a quick test:
 
    ```
@@ -146,7 +208,9 @@ If the download fails:
 
 ## Run it (every time)
 
-Use separate terminal windows. Docker Desktop must be running.
+Docker Desktop must be running (wait for "Engine running"). The app needs **two programs running at the same time,
+each in its own terminal window**. **Keep both windows open** while you use the app: closing a window stops that
+program. Use a third window for any other command (tests, `demo_reset.py`).
 
 ```
 docker compose up -d                       # window 0: database and local email inbox
@@ -160,6 +224,8 @@ cd frontend
 npm run dev                                # open the address it prints (usually http://localhost:5173)
 ```
 
+- **Wait until the backend window shows "Application startup complete"** (a few seconds; the embedding model loads
+  in the background) before you log in. Check http://localhost:8000/docs opens.
 - Local email inbox (approval and rejection emails): http://localhost:8025
 - The backend loads the MiniLM model when it starts, so the first few seconds are slow; after that, "Keep" and uploads are quick.
 - Start Ollama before the demo (open the Ollama app, or run `ollama serve`) and check it with `ollama list`. If it is
@@ -176,6 +242,27 @@ Password for all demo logins: `demo1234`. Domain: `demo.graydi.local`.
 | Fall 2026 (optional) | `2026-07-15` | Fall 2026 | `selin.aksoy`, `jonas.lindgren`, `imani.thompson` (new admits, no history) | `morgan.lee` |
 
 Log in with the full address, for example `priya.raman@demo.graydi.local`.
+
+| Login | Role | What it shows |
+|---|---|---|
+| `priya.raman` | Student, strong QPA | Normal flow, a draft of up to 54 units |
+| `daniel.okafor` | Student, low QPA | Low-QPA risk flag, rejection, edit and resubmit |
+| `alex.rivera` | New student | First schedule, no history |
+| `morgan.lee` | Advisor | Caseload, review, approve or reject |
+| `selin.aksoy`, `jonas.lindgren`, `imani.thompson` | New admits (Fall 2026 mode) | Upload a resume, interests, first schedule |
+
+### First test: log in as Priya
+
+1. Open http://localhost:5173 and log in as `priya.raman@demo.graydi.local` / `demo1234`. The dashboard shows her
+   progress and the term **Spring 2027**.
+2. Open **Interests** and **upload** a resume (text or PDF). Sample resumes are in `data/demo/`; any of them works.
+   Press **Keep** on the suggested interests and wait for each to show "Kept".
+3. Open **Build my schedule**. Expect a draft of up to 54 units, the rule checks, and electives in two groups that
+   follow the interests you just kept.
+4. Change an elective (swap or remove), then press **Send to advisor**.
+5. Log in as `morgan.lee@demo.graydi.local` to review it. Approve or reject; the email appears in the inbox at
+   http://localhost:8025.
+6. When you are done, put the demo back to its starting state: `python scripts/demo_reset.py`.
 
 **Walkthrough** (use the students of the mode you started):
 

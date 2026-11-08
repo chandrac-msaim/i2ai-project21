@@ -1,7 +1,7 @@
 # Gray DI Degree Pathway Advisor — Design Notes
 
 > Living design document. Come back to this file before each work session.
-> Last updated: 9 Nov 2026 (final handover: screens, API list, demo modes, assumptions) · Status: **Step 2 done · M1–M9 done (M9b in review) (331 tests pass) → M7 next**
+> Last updated: 8 Nov 2026 (final handover: screens, API list, demo modes, assumptions) · Status: **Step 2 done · M1–M9b done · 365 backend tests (364 without the LLM test) + 24 frontend tests pass**
 >
 > Working rule: after every step, this file is updated (diagrams included as Mermaid) and downloaded to the project's `docs\DESIGN.md`.
 
@@ -14,7 +14,7 @@
 | 1 | Architecture and the 5 agentic functions | Done (this doc) |
 | — | Local setup (Docker Postgres 16 + pgvector 0.8.7 + pg_trgm, Mailpit) | Done, verified 7 Nov |
 | 2 | Database design: normalized schema (39 tables), loader, synthetic data, embeddings | Done (section 10), tested on PostgreSQL 16 + pgvector |
-| 3 | Code with Claude Code, milestones M1–M9, one prompt per milestone; project rules fixed up front | M1–M9 done; 365 backend tests (user run) + 24 frontend tests pass (section 11) |
+| 3 | Code with Claude Code, milestones M1–M9, one prompt per milestone; project rules fixed up front | M1–M9 done; 365 backend tests + 24 frontend tests pass (section 11) |
 | — | AI advisor chat screen | Dropped for MVP, add if time allows |
 
 Section 9 has the Windows setup (PostgreSQL + pgvector in Docker, Mailpit, Ollama, Python, Node).
@@ -1354,9 +1354,9 @@ If `python` points to another version, call 3.14 explicitly (`py -3.14`). If `Ac
 
 ---
 
-## 11. Final status (handover, 9 Nov 2026)
+## 11. Final status (handover, 8 Nov 2026)
 
-**Tests:** backend `pytest -q` = 365 passed on a freshly loaded database (364 without the one LLM test; figure reported by the user after the last changes); frontend `npm test` = 24 passed; `tsc -b` clean.
+**Tests:** backend `pytest -q` = 365 passed on a freshly loaded database (364 without the one LLM test); frontend `npm test` = 24 passed; `tsc -b` clean.
 Keep this number current when tests are added.
 
 ### 11.1 Screens (React, `frontend/src/pages/`)
@@ -1409,7 +1409,7 @@ differences from the mockups.
 Domain errors are JSON with a `code` (mapped to 400, 403, 404, 409). Every route is in the role matrix test.
 
 ### 11.3 Diagrams
-`docs/diagrams.html` (open in a browser) holds the architecture, agent flow, schedule lifecycle and database diagrams; the
+`docs/DIAGRAMS.md` (Mermaid; renders on GitHub) holds the architecture, agent flow, schedule lifecycle and database diagrams; the
 Mermaid sources are in sections 3, 4 and 10 of this file.
 
 ### 11.4 Open points
