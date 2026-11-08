@@ -137,7 +137,7 @@ flowchart TB
 | Layer | Choice |
 |---|---|
 | Database | PostgreSQL 16 + pgvector (Docker image `pgvector/pgvector:pg16`) |
-| Backend | Python 3.12, FastAPI, SQLAlchemy 2, Alembic, Pydantic |
+| Backend | Python 3.14.3, FastAPI, SQLAlchemy 2, Pydantic (schema changes: `db/schema.sql` plus re-runnable SQL files in `db/migrations/`) |
 | Embeddings | `sentence-transformers/all-MiniLM-L6-v2` (384 dimensions), runs locally |
 | LLM | Ollama `qwen2.5:3b` for development (no API key); Claude API optional for the demo |
 | Frontend | React + TypeScript, Vite, Tailwind CSS |
@@ -309,7 +309,7 @@ All routes need a JWT; the role is checked by a dependency, and ownership (a stu
 | D11 | Code is generated with **Claude Code**, one milestone at a time (M1–M9), with the project rules given at the start of every session | Small, reviewable steps; the golden rules stay in front of the coding agent every session |
 | D12 | **The plannable term is decided by date, not a fixed flag.** A term can be planned while its registration is open (`term_registration(today)`); "today" = `APP_TODAY` or the real date. `terms.is_planning` removed | Matches how registration really works; also supports new students and demos at other dates |
 | D13 | **Interest flow:** resume / undergrad text → LLM suggests labels (status *suggested*); the student keeps, removes or adds; a typed interest is saved by the backend as *manual, confirmed* with its embedding; only *confirmed* ones are used | "Nothing is saved until you say yes" (8 Oct meeting); manual entry must persist |
-| D14 | **UI follows the v2 mockups.** Images in `docs/mockups/`, rules and tokens in `docs/UI_SPEC.md` (colors measured from the mockups: primary `#0e5a5c`, advisor bar `#0b3b3d`, page `#f3f4f6`; IBM Plex Sans + Mono). The spec lists intended differences (no chat, no transfer credit, term picker, upload, two suggestion groups, discard/withdraw) | Claude Code can read the images; one written source for differences |
+| D14 | **UI follows the v2 mockups.** Images in `docs/mockups/`, colors measured from the mockups (primary `#0e5a5c`, advisor bar `#0b3b3d`, page `#f3f4f6`; IBM Plex Sans + Mono). Intended differences from the images: no chat, no transfer credit, a term picker, a document upload, two suggestion groups, discard / withdraw, status-aware schedule page, a read-only message thread for the student, and university, program, term and advisor-title names taken from the data instead of typed text | Claude Code can read the images; the differences are listed in this one row |
 | D15 | **Schedule lifecycle with soft discard.** draft → submitted → approved / rejected; student can discard a draft (status `discarded`, row kept), withdraw a submitted one before the decision, build again (old → `superseded`, `previous_schedule_id`), resubmit after rejection. Approved is locked | Students need to start over; history and audit trail must stay intact for compliance |
 | D16 | **Elective recommendations: two groups, coverage, fit.** score = 0.7 similarity + 0.2 popularity + 0.1 fit; "Matches your interests" only if similarity ≥ 0.40, else "Popular with AIM students"; best course per confirmed interest first, no near-duplicates (> 0.85); fit = preferred time of day + modality + no clash with locked core; clashes flagged not removed; weights in `rule_settings` | Clearer reasons for each suggestion, covers all interests, respects schedule and preferences |
 | D17 | **One draft, filled to 54 units; 55–60 only with QPA above 3.50; no lighter load.** The AI builds a single draft (locked core + electives by rank) up to `tracks.max_units_per_term` = 54. A schedule can be submitted with up to 54 units, or up to `tracks.max_units_extended` = 60 only if the cumulative QPA is above `tracks.extended_units_min_qpa` = 3.50 (no QPA yet = 54). Over 60 is blocked. The advisor sees UNIT_OVERLOAD for 55–60. Low QPA no longer reduces the load; it stays a risk flag | Client decision 7 Nov |
@@ -402,12 +402,12 @@ The final popularity view is `course_popularity` in `db/schema.sql` (section 10.
 - [x] M6 API routes for the screens (7 Nov, 331 tests pass). Part A: `schedules.ai_baseline`, `courses.syllabus_url` (`db/migrations/2026-11-07_m6_ai_baseline_syllabus.sql`, no reset), lifecycle `reset` and item edits, email written to "you". Part B: 29 routes (`app/api/`: students, schedules, courses, advisor, messages, terms; `errors.py`, `deps.py`), services `schedule_views`, `student_portal`, `catalog_search`, `advisor_portal`, `messaging`, `access`; `rules.repository.course_check_results`; `decide` now also requires the student's own advisor. New dependencies: `pypdf` (PDF text), `python-multipart` (FastAPI file uploads). Tests: `test_api_student.py`, `test_api_advisor.py` (happy path + wrong role for every route), `test_lifecycle.py`, `test_review.py`
 - [x] M7 React student screens (dashboard, interests, draft schedule)
 - [x] M8 React advisor screens (caseload, review), HTML decision email, term labels, universities
-- [x] M9 Demo modes (Spring 2027 and Fall 2026), `scripts/demo_reset.py`, `docs/DEMO.md`, `tests/test_e2e_demo.py`, handover docs
+- [x] M9 Demo modes (Spring 2027 and Fall 2026), `scripts/demo_reset.py` (default Spring 2027, `--mode fall` for the optional Fall 2026 demo), `tests/test_e2e_demo.py`, handover docs
 
 ### Dev PC status (7 Nov)
 
 - Docker Postgres + pgvector, Mailpit: running and healthy
-- Python **3.14** venv (`.venv`) — 3.12 not installed; scripts run on 3.11+
+- Python **3.14.3** venv (`.venv`)
 - Data loaded (`load_data.py --reset`), embeddings created
 - Ollama installed; model `qwen2.5:3b`
 
@@ -433,7 +433,7 @@ The final popularity view is `course_popularity` in `db/schema.sql` (section 10.
      memory=4GB
      ```
    - Then run `wsl --shutdown` and restart Docker Desktop.
-4. **Python 3.12** from python.org. Tick **"Add python.exe to PATH"**.
+4. **Python 3.14.3** from python.org. Tick **"Add python.exe to PATH"**.
 5. **Node.js 20 LTS** from nodejs.org.
 6. **Git** and **VS Code**.
 7. **Ollama** from ollama.com (Windows installer).
@@ -605,9 +605,9 @@ Then create the environment and install packages:
 
 ```powershell
 cd C:\dev\graydi-advisor
-py -3.12 -m venv .venv
+python -m venv .venv                      # Python 3.14.3
 .\.venv\Scripts\Activate.ps1
-pip install "psycopg[binary]" pgvector sentence-transformers pandas openpyxl python-dotenv
+pip install "psycopg[binary]" pgvector sentence-transformers pandas openpyxl python-dotenv   # just for this quick test
 ```
 
 Save as `test_setup.py` and run `python test_setup.py`:
@@ -628,6 +628,8 @@ with psycopg.connect("postgresql://graydi:graydi_dev_pw@localhost:5432/graydi") 
 ```
 
 A similarity of roughly 0.4–0.7 means everything works.
+
+This is only a connection test. The real project setup is the one in `README.md`: `copy .env.example .env`, `docker compose up -d`, `pip install -r requirements.txt` and `pip install -r backend\requirements-backend.txt`, `python scripts\load_data.py --reset`, `python scripts\embed_courses.py`, `npm install` in `frontend`, and `ollama pull qwen2.5:3b` (section 9.7). The first `embed_courses.py` run needs internet to download the MiniLM model (about 90 MB, then cached); if `.env` sets `HF_HUB_OFFLINE=1` (use the cached model only, no network), leave it out until that first download has finished.
 
 ### 9.9 Daily commands
 
@@ -1281,7 +1283,7 @@ erDiagram
 | Program, tracks, core plan, elective rules, grade scale | `reference_data.py` (from the AIM handbook text) |
 | Term and mini-session dates | Approximate CMU calendar (A12) |
 | Capacity / enrolled for all sections; 37 TBA times; 20 instructor profiles | Generated (marked) |
-| 126 students (incl. 1 new student), 6 advisors, 1,794 enrollments, 21 exemption-exam waivers, interests, resumes, logins | Generated (seed 42) |
+| 129 students (126 from the first load, incl. Alex Rivera as the Spring 2027 new student, plus the three Fall 2026 new admits Selin Aksoy, Jonas Lindgren and Imani Thompson, who have no history and upload a resume in the demo), 6 advisors, 1,794 enrollments, 21 exemption-exam waivers, interests, resumes, logins | Generated (seed 42) |
 | 1,170 rows of demand history 2021–2026 | Generated |
 
 **Generated population:**
@@ -1310,7 +1312,6 @@ Other generated details:
 - All 6 Spring 2027 core courses for AIM12 term 2 have open sections.
 - 8 current students are below QPA 3.0, which feeds the LOW_QPA demos.
 - **Same data every run:** the generator gives identical data whatever Python's hash seed (checked with an md5 of all enrollments across 3 runs).
-- The embedding script was tested with stand-in vectors. The real MiniLM model downloads on your PC on the first run.
 
 ### 10.7 New assumptions (confirm with team / Gray DI)
 
@@ -1327,9 +1328,10 @@ From the project folder, with Docker running:
 cd "C:\Users\voidmain\Work and Learn\MasterStudy\CMU\courses\MSAIM\fall-semester\AI Introduction\coding\graydi-advisor"
 
 # 1. Python environment (once). The catalog is already in data\seed\, so no Excel file is needed.
-py -3.12 -m venv .venv
+python -m venv .venv                     # Python 3.14.3
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt          # sentence-transformers also installs PyTorch (CPU), a few minutes
+pip install -r backend\requirements-backend.txt   # the API and the tests
 
 # 2. Create the tables and load the data (safe to repeat; --reset rebuilds everything)
 python scripts\load_data.py --reset
@@ -1341,7 +1343,7 @@ python scripts\embed_courses.py --test "AI governance in banks"
 Get-Content db\checks.sql | docker exec -i graydi-postgres psql -U graydi -d graydi
 ```
 
-If `python` points to the wrong version, use `py -3.12` instead. If `Activate.ps1` is blocked, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once.
+If `python` points to another version, call 3.14 explicitly (`py -3.14`). If `Activate.ps1` is blocked, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once.
 
 ### 10.9 Next: Step 3 (code with Claude Code)
 
@@ -1367,7 +1369,7 @@ Keep this number current when tests are added.
 | `/advisor` | AdvisorCaseload | advisor | filters, search, program filter only if the advisor has 2+ programs |
 | `/advisor/schedules/:id` | AdvisorReview | advisor | checks, risk flags, how the AI built it, messages, decision, email preview |
 
-All names (university, college, program, term label, advisor title) come from the data; `docs/UI_SPEC.md` lists the intended
+All names (university, college, program, term label, advisor title) come from the data; decision D14 lists the intended
 differences from the mockups.
 
 ### 11.2 API (FastAPI, interactive docs at `/docs`; 30 operations)
@@ -1411,4 +1413,4 @@ Domain errors are JSON with a `code` (mapped to 400, 403, 404, 409). Every route
 Mermaid sources are in sections 3, 4 and 10 of this file.
 
 ### 11.4 Open points
-`docs/ASSUMPTIONS.md` (questions for Gray DI). Known gaps: the pages were checked as text only and not compared pixel by pixel with the mockups; students read advisor messages but cannot reply in the portal.
+Questions for Gray DI (Fall-only versus Spring starts, the grade scale with A+ = 4.33, undergraduate courses with a petition and at most 12 units, which programs and tracks go live first, synthetic capacity and popularity data, the Capstone placement in the AIM16 plan, a hosted versus a local model, and whether students may reply to messages) are listed in the README under "Status and limits". Known gaps: the pages were checked as text only and not compared pixel by pixel with the mockups; students read advisor messages but cannot reply in the portal.

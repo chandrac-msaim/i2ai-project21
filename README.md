@@ -40,8 +40,9 @@ CMU MS in AI Systems Management program.
 | Email | Mailpit, a local inbox for the approval and rejection emails |
 
 Course embeddings are created by `scripts/embed_courses.py` after the data is loaded. A student's interest is
-embedded when the student confirms it ("Keep"). Both models run on the local machine; nothing is sent to an
-outside service.
+embedded when the student confirms it ("Keep"). By default both models run on the local machine and nothing is sent to an
+outside service. Setting `LLM_PROVIDER=claude` in `.env` is an optional switch that sends the LLM prompts to the Claude API
+instead (student names are removed first).
 
 ## Status and limits (MVP)
 
@@ -63,7 +64,7 @@ This project was built with AI coding assistance (Claude Code), reviewed and tes
 | Tool | Notes |
 |---|---|
 | Docker Desktop | Start it and wait for "Engine running" |
-| Python 3.12 or 3.13 | Not the newest release, so the machine-learning packages install cleanly |
+| Python 3.14.3 | For the backend and the data scripts |
 | Node.js 20 or newer | For the React frontend |
 | Git | To clone the repository |
 | MiniLM embedding model | Downloaded automatically the first time you run `embed_courses.py` (about 90 MB, then cached). Needs internet once |
@@ -95,7 +96,7 @@ ollama pull qwen2.5:3b                   # local LLM (about 2 GB, one time)
 ```bash
 cp .env.example .env
 docker compose up -d
-python3.12 -m venv .venv
+python3.14 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pip install -r backend/requirements-backend.txt
