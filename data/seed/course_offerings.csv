@@ -1,0 +1,265 @@
+course_code,term_code,status,active_sections,course_length
+94-050,F26,offered,1,Full semester
+94-400,M26,offered,4,Full semester
+94-400,F26,offered,10,Full semester
+94-400,S27,offered,10,Full semester
+94-401,F26,offered,2,Mini 1; Mini 2
+94-401,S27,offered,4,Mini 3; Mini 4
+94-402,S27,offered,1,Full semester
+94-403,F26,offered,1,Mini 2
+94-408,F26,offered,1,Full semester
+94-408,S27,offered,1,Full semester
+94-409,S27,offered,1,Full semester
+94-413,F26,offered,2,Mini 1; Mini 2
+94-413,S27,offered,1,Mini 3
+94-423,F26,offered,1,Full semester
+94-423,S27,offered,1,Full semester
+94-431,F26,offered,4,Mini 2
+94-431,S27,offered,2,Mini 3
+94-443,S27,offered,1,Full semester
+94-454,F26,offered,1,Mini 2
+94-465,S27,offered,1,Mini 3
+94-489,F26,cancelled,0,
+94-491,F26,offered,1,Full semester
+94-491,S27,offered,1,Full semester
+94-700,M26,offered,1,Mini 6
+94-700,F26,offered,10,Mini 1; Mini 2
+94-701,F26,cancelled,0,
+94-703,S27,offered,1,Mini 3
+94-704,F26,offered,1,Full semester
+94-705,F26,offered,1,Full semester
+94-706,S27,offered,1,Full semester
+94-708,F26,offered,1,Mini 1
+94-708,S27,offered,1,Mini 4
+94-709,S27,offered,1,Full semester
+94-710,S27,offered,2,Mini 3; Mini 4
+94-719,F26,offered,1,Mini 1
+94-719,S27,offered,1,Mini 4
+94-722,S27,offered,1,Mini 3
+94-723,S27,offered,1,Mini 4
+94-728,S27,offered,2,Mini 4
+94-732,S27,offered,2,Mini 3
+94-739,F26,offered,8,Full semester
+94-739,S27,offered,5,Full semester
+94-784,S27,offered,1,Mini 4
+94-800,M26,offered,1,Mini 5
+94-800,F26,offered,5,Mini 1; Mini 2
+94-800,S27,offered,5,Mini 3; Mini 4
+94-801,F26,offered,3,Mini 1; Mini 2
+94-801,S27,offered,4,Mini 3; Mini 4
+94-802,F26,offered,2,Full semester
+94-802,S27,offered,1,Full semester
+94-803,F26,offered,1,Mini 2
+94-804,F26,offered,2,Mini 1
+94-806,M26,offered,1,Mini 6
+94-806,F26,offered,1,Mini 1
+94-807,F26,offered,1,Mini 2
+94-808,F26,offered,1,Full semester
+94-808,S27,offered,1,Full semester
+94-809,M26,offered,1,Full semester
+94-811,F26,cancelled,0,
+94-811,S27,offered,1,Mini 4
+94-813,F26,offered,2,Mini 1; Mini 2
+94-813,S27,offered,1,Mini 3
+94-814,F26,offered,1,Mini 2
+94-815,S27,offered,2,Mini 4
+94-816,S27,offered,1,Mini 4
+94-818,S27,offered,1,Mini 3
+94-819,S27,offered,2,Mini 3; Mini 4
+94-820,S27,offered,1,Mini 3
+94-822,S27,offered,1,Mini 4
+94-823,F26,offered,1,Full semester
+94-823,S27,offered,1,Full semester
+94-824,F26,offered,1,Mini 2
+94-826,S27,offered,1,Mini 3
+94-828,S27,offered,1,Mini 3
+94-829,F26,offered,1,Mini 2
+94-830,S27,offered,1,Mini 4
+94-831,S27,offered,1,Full semester
+94-834,F26,offered,4,Mini 2
+94-834,S27,offered,2,Mini 3
+94-835,S27,offered,2,Mini 4
+94-837,F26,offered,1,Mini 2
+94-838,F26,offered,1,Mini 2
+94-838,S27,offered,1,Mini 4
+94-842,S27,offered,2,Mini 3
+94-843,S27,offered,1,Full semester
+94-844,F26,offered,2,Mini 2
+94-844,S27,offered,3,Mini 4
+94-845,F26,offered,1,Mini 2
+94-846,S27,offered,1,Mini 3
+94-847,S27,offered,1,Full semester
+94-854,F26,offered,1,Mini 2
+94-854,S27,offered,1,Mini 4
+94-855,S27,offered,1,Full semester
+94-857,S27,offered,1,Full semester
+94-859,S27,offered,1,Mini 4
+94-862,F26,offered,1,Mini 2
+94-865,S27,offered,1,Mini 3
+94-866,F26,offered,1,Mini 1
+94-866,S27,offered,1,Mini 3
+94-867,F26,offered,2,Mini 1
+94-868,F26,offered,1,Mini 1
+94-869,M26,offered,1,Mini 6
+94-869,S27,offered,1,Mini 4
+94-870,F26,offered,2,Mini 1; Mini 2
+94-870,S27,offered,3,Mini 3; Mini 4
+94-871,S27,offered,1,Mini 3
+94-879,F26,offered,4,Mini 1; Mini 2
+94-879,S27,offered,3,Mini 3; Mini 4
+94-881,S27,offered,1,Mini 3
+94-885,M26,offered,1,Mini 6
+94-885,F26,offered,1,Mini 1
+94-889,F26,offered,1,Full semester
+94-891,F26,offered,1,Full semester
+94-891,S27,offered,1,Full semester
+94-893,F26,offered,1,Mini 1
+94-894,F26,offered,1,Full semester
+94-899,F26,offered,1,Full semester
+94-900,M26,offered,1,Full semester
+94-901,M26,offered,1,Full semester
+94-902,F26,offered,11,Full semester
+94-902,S27,offered,11,Full semester
+94-903,F26,offered,11,Full semester
+94-903,S27,offered,11,Full semester
+94-904,M26,offered,11,Full semester
+94-904,F26,offered,11,Full semester
+94-904,S27,offered,11,Full semester
+94-905,M26,offered,11,Full semester
+94-905,F26,offered,11,Full semester
+94-905,S27,offered,11,Full semester
+94-989,F26,offered,1,Full semester
+95-422,F26,offered,2,Full semester
+95-422,S27,offered,2,Full semester
+95-433,F26,offered,1,Mini 2
+95-443,F26,offered,1,Full semester
+95-451,F26,offered,1,Mini 1
+95-451,S27,offered,1,Mini 3
+95-452,F26,offered,1,Full semester
+95-455,S27,offered,1,Mini 3
+95-460,F26,offered,1,Mini 2
+95-481,S27,offered,1,Mini 3
+95-483,F26,offered,1,Mini 2
+95-483,S27,offered,1,Mini 4
+95-499,F26,offered,1,Mini 1
+95-559,M26,offered,1,Full semester
+95-564,M26,offered,1,Full semester
+95-565,M26,offered,1,Full semester
+95-702,F26,offered,3,Full semester
+95-702,S27,offered,2,Full semester
+95-703,F26,offered,6,Full semester
+95-705,M26,offered,1,Full semester
+95-706,F26,offered,1,Mini 2
+95-706,S27,offered,1,Mini 3
+95-710,F26,offered,4,Mini 1; Mini 2
+95-710,S27,offered,3,Mini 3
+95-719,F26,offered,2,Mini 1; Mini 2
+95-719,S27,offered,4,Mini 3; Mini 4
+95-720,M26,offered,3,Full semester
+95-720,F26,offered,6,Full semester
+95-720,S27,offered,4,Full semester
+95-722,M26,offered,1,Mini 6
+95-722,F26,offered,4,Mini 2
+95-723,F26,offered,1,Mini 2
+95-723,S27,offered,1,Mini 4
+95-724,M26,offered,2,Full semester
+95-728,M26,offered,1,Mini 5
+95-731,M26,offered,1,Mini 6
+95-733,F26,offered,1,Mini 2
+95-733,S27,offered,1,Mini 4
+95-734,F26,offered,1,Full semester
+95-736,F26,cancelled,0,
+95-737,M26,offered,1,Mini 6
+95-737,F26,offered,2,Mini 1; Mini 2
+95-737,S27,offered,1,Mini 3
+95-740,F26,offered,1,Full semester
+95-743,F26,offered,1,Full semester
+95-746,F26,offered,2,Mini 1; Mini 2
+95-746,S27,offered,1,Mini 4
+95-747,F26,offered,1,Mini 2
+95-748,F26,offered,1,Mini 2
+95-748,S27,offered,1,Mini 3
+95-749,M26,offered,1,Mini 6
+95-749,S27,offered,1,Mini 4
+95-752,M26,offered,1,Full semester
+95-752,F26,offered,1,Full semester
+95-755,S27,offered,1,Mini 3
+95-758,F26,offered,1,Full semester
+95-758,S27,offered,1,Full semester
+95-759,S27,offered,1,Mini 3
+95-760,F26,offered,3,Mini 1; Mini 2
+95-760,S27,offered,6,Mini 3; Mini 4
+95-762,F26,offered,2,Mini 2
+95-765,F26,offered,5,Full semester
+95-765,S27,offered,10,Full semester
+95-767,F26,offered,2,Mini 2
+95-767,S27,offered,4,Mini 3; Mini 4
+95-771,F26,offered,1,Full semester
+95-771,S27,offered,1,Full semester
+95-796,F26,offered,7,Mini 1
+95-799,F26,offered,2,Mini 1; Mini 2
+95-800,S27,offered,1,Full semester
+95-802,S27,offered,1,Full semester
+95-808,F26,offered,1,Mini 2
+95-810,M26,cancelled,0,
+95-810,S27,offered,1,Mini 3
+95-813,F26,offered,1,Mini 1
+95-815,F26,offered,3,Mini 2
+95-818,F26,offered,1,Full semester
+95-819,F26,offered,4,Mini 2
+95-819,S27,offered,3,Mini 4
+95-820,F26,offered,1,Mini 1
+95-824,F26,offered,1,Full semester
+95-828,S27,offered,4,Full semester
+95-829,M26,offered,1,Mini 5
+95-835,F26,offered,2,Mini 1; Mini 2
+95-835,S27,offered,2,Mini 3; Mini 4
+95-841,S27,offered,1,Full semester
+95-843,F26,offered,1,Full semester
+95-844,F26,offered,2,Mini 1
+95-851,F26,offered,1,Mini 1
+95-851,S27,offered,1,Mini 3
+95-854,S27,offered,1,Mini 4
+95-856,F26,cancelled,0,
+95-861,S27,offered,1,Mini 3
+95-862,F26,offered,1,Full semester
+95-862,S27,offered,1,Full semester
+95-863,S27,offered,1,Mini 3
+95-864,F26,offered,1,Mini 1
+95-864,S27,offered,3,Mini 3
+95-865,F26,offered,3,Mini 2
+95-865,S27,offered,5,Mini 4
+95-866,F26,offered,3,Mini 2
+95-867,S27,offered,3,Full semester
+95-868,M26,offered,1,Mini 5
+95-871,F26,offered,1,Full semester
+95-872,S27,offered,1,Mini 3
+95-873,S27,offered,1,Mini 4
+95-874,F26,offered,3,Mini 1; Mini 2
+95-874,S27,offered,2,Mini 3; Mini 4
+95-876,S27,offered,3,Mini 4
+95-877,F26,offered,1,Full semester
+95-877,S27,offered,12,Full semester
+95-878,S27,offered,1,Full semester
+95-879,S27,offered,1,Mini 4
+95-881,M26,offered,1,Mini 5
+95-881,S27,offered,1,Mini 3
+95-883,F26,offered,1,Mini 2
+95-883,S27,offered,1,Mini 4
+95-884,M26,offered,1,Mini 5
+95-884,F26,offered,1,Mini 1
+95-885,F26,offered,1,Full semester
+95-885,S27,offered,1,Full semester
+95-886,F26,offered,1,Full semester
+95-888,F26,offered,3,Mini 1
+95-888,S27,offered,1,Mini 4
+95-889,S27,offered,1,Mini 4
+95-891,F26,offered,3,Full semester
+95-891,S27,offered,2,Full semester
+95-895,F26,offered,1,Mini 2
+95-896,F26,offered,5,Full semester
+95-897,S27,offered,3,Mini 3
+95-898,F26,offered,1,Mini 1
+95-900,M26,offered,1,Full semester
+95-900,F26,offered,1,Full semester
+95-900,S27,offered,1,Full semester

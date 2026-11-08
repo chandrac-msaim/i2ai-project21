@@ -1,0 +1,9 @@
+Jonas Lindgren
+Software engineer, 3 years at a logistics startup.
+
+- Built backend APIs in Python and a customer support chatbot on top of an LLM API.
+- Prototyped an AI agent that reads support tickets, calls internal tools and drafts replies; deployed on AWS cloud.
+- Wrote software tests and mentored two junior developers.
+
+Education: BSc in Computer Science.
+Goal: build production AI agents and language model applications.

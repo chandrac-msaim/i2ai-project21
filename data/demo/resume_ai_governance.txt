@@ -1,0 +1,9 @@
+Selin Aksoy
+Compliance and policy analyst, 4 years at a European insurance group.
+
+- Reviewed new regulation on automated decision making and wrote the internal compliance guidance for the credit and insurance underwriting teams.
+- Supported the risk committee on AI governance: model inventory, documentation standards and responsible AI checklists.
+- Built monthly reporting on model validation findings for financial services regulators.
+
+Education: BA in Law and Economics.
+Goal: lead AI governance and compliance programs in financial services.

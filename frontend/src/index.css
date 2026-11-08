@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { min-height: 100%; }
+  body { @apply bg-page font-sans text-[15px] text-ink antialiased; }
+  button { @apply cursor-pointer disabled:cursor-not-allowed; }
+  /* visible keyboard focus on every control (accessibility) */
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-primary; }
+}

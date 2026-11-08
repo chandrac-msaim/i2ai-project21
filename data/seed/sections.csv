@@ -1,0 +1,583 @@
+section_id,course_code,term_code,section_code,session_code,modality,location,status,days_times,instructors
+94-050-F26-A,94-050,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-M26-A,94-400,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-M26-B,94-400,M26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-M26-C,94-400,M26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-M26-D,94-400,M26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-A,94-400,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Ananya Sen
+94-400-F26-B,94-400,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Alessandro Acquisti
+94-400-F26-C,94-400,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-D,94-400,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-E,94-400,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-F,94-400,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-G,94-400,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-H,94-400,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-I,94-400,F26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-F26-J,94-400,F26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-A,94-400,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-B,94-400,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-C,94-400,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-D,94-400,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-E,94-400,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-F,94-400,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-G,94-400,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-H,94-400,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-I,94-400,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-400-S27-J,94-400,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-401-F26-A1,94-401,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-401-F26-B2,94-401,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-401-S27-A3,94-401,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-401-S27-B4,94-401,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Sandy Murphy
+94-401-S27-C4,94-401,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Sandy Murphy
+94-401-S27-D3,94-401,S27,D3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Sandy Murphy
+94-402-S27-A,94-402,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Christopher Goranson
+94-403-F26-A2,94-403,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Stefan Labash
+94-408-F26-A,94-408,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Chris Brussalis
+94-408-S27-A,94-408,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Chris Brussalis
+94-409-S27-A,94-409,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 02:00PM-03:20PM,Rema Padman
+94-413-F26-A1,94-413,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-413-F26-B2,94-413,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Jill Stephenson
+94-413-S27-A3,94-413,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-423-F26-A,94-423,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Ari Lightman
+94-423-S27-A,94-423,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Ari Lightman
+94-431-F26-A1,94-431,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,MW 03:30PM-04:50PM; F 02:00PM-03:20PM,
+94-431-F26-A2,94-431,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 03:30PM-04:50PM,Felix Koenig
+94-431-F26-B2,94-431,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 03:30PM-04:50PM,Andrew Garin
+94-431-F26-C2,94-431,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 03:30PM-04:50PM,Andrew Garin
+94-431-F26-D2,94-431,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 03:30PM-04:50PM,Felix Koenig
+94-431-S27-A3,94-431,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 11:00AM-12:20PM,Akshaya Jha
+94-431-S27-B3,94-431,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 11:00AM-12:20PM,Akshaya Jha
+94-443-S27-A,94-443,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 02:00PM-03:20PM,Brett Crawford
+94-454-F26-A2,94-454,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,David Lassman
+94-465-S27-A3,94-465,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Mariana Escallon Barrios
+94-489-F26-A,94-489,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",cancelled,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,
+94-491-F26-A,94-491,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,J. David Riel
+94-491-S27-A,94-491,S27,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,J. David Riel
+94-700-M26-A6,94-700,M26,A6,M6,in_person,"Pittsburgh, Pennsylvania",offered,R 06:00PM-08:50PM,
+94-700-F26-A2,94-700,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Lindsay Larson
+94-700-F26-B1,94-700,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Rubab Jafry O'Connor
+94-700-F26-C1,94-700,F26,C1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Lindsay Larson
+94-700-F26-D1,94-700,F26,D1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Lindsay Larson
+94-700-F26-E2,94-700,F26,E2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Anna Mayo
+94-700-F26-F2,94-700,F26,F2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Anna Mayo
+94-700-F26-G1,94-700,F26,G1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Lindsay Larson
+94-700-F26-H2,94-700,F26,H2,M2,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Lindsay Larson
+94-700-F26-I2,94-700,F26,I2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Anna Mayo
+94-700-F26-J2,94-700,F26,J2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Lindsay Larson
+94-701-F26-A2,94-701,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",cancelled,MW 03:30PM-04:50PM,
+94-703-S27-A3,94-703,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Rachel Chung
+94-704-F26-A,94-704,F26,A,FULL,remote,"Pittsburgh, Pennsylvania",offered,T 08:00PM-09:30PM,Karl Maschino
+94-705-F26-A,94-705,F26,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Osea Giuntella
+94-706-S27-A,94-706,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 02:00PM-03:20PM,Rema Padman
+94-708-F26-A1,94-708,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Ari Lightman
+94-708-S27-A4,94-708,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Ari Lightman
+94-709-S27-A,94-709,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Holly Wiberg
+94-710-S27-A3,94-710,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Nuray Baltaci Akhuseyinoglu
+94-710-S27-A4,94-710,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Nuray Baltaci Akhuseyinoglu
+94-719-F26-A1,94-719,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Jill Stephenson
+94-719-S27-A4,94-719,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-722-S27-A3,94-722,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 01:00PM-02:30PM,Meredith Grelli
+94-723-S27-A4,94-723,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,M 01:00PM-02:30PM,Meredith Grelli
+94-728-S27-A4,94-728,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Michael Smith
+94-728-S27-B4,94-728,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Michael Smith
+94-732-S27-A3,94-732,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Michael Smith
+94-732-S27-B3,94-732,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Michael Smith
+94-739-F26-A,94-739,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 05:00PM-06:20PM; W 05:00PM-06:20PM,Sean Qian
+94-739-F26-B,94-739,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 05:00PM-06:20PM; W 05:00PM-06:20PM,Kim Hyatt
+94-739-F26-C,94-739,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 05:00PM-06:20PM; R 05:00PM-06:20PM,Haylee Massaro
+94-739-F26-D,94-739,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 05:00PM-06:20PM; R 05:00PM-06:20PM,Stacy Rosenberg
+94-739-F26-E,94-739,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 05:00PM-06:20PM; R 05:00PM-06:20PM,Rema Padman
+94-739-F26-F,94-739,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 05:00PM-06:20PM; W 05:00PM-06:20PM,William Gogolak
+94-739-F26-G,94-739,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 05:00PM-06:20PM; R 05:00PM-06:20PM,Stefan Labash
+94-739-F26-H,94-739,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 05:00PM-06:20PM; W 05:00PM-06:20PM,Rebekah Fitzsimmons
+94-739-S27-A,94-739,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,William Gogolak
+94-739-S27-B,94-739,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Brett Crawford
+94-739-S27-C,94-739,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Xiaoying Tu
+94-739-S27-D,94-739,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Kim Hyatt
+94-739-S27-E,94-739,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,J. David Riel
+94-784-S27-A4,94-784,S27,A4,M4,remote,"Pittsburgh, Pennsylvania",offered,TBA,Korryn Mozisek
+94-800-M26-A5,94-800,M26,A5,M5,in_person,"Pittsburgh, Pennsylvania",offered,M 06:00PM-08:50PM,
+94-800-F26-A1,94-800,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Linda Moya
+94-800-F26-B2,94-800,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Linda Moya
+94-800-F26-C1,94-800,F26,C1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Linda Moya
+94-800-F26-D2,94-800,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Linda Moya
+94-800-F26-E2,94-800,F26,E2,M2,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Zachary Ciccone
+94-800-S27-A3,94-800,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Zachary Ciccone
+94-800-S27-B4,94-800,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Linda Moya
+94-800-S27-C3,94-800,S27,C3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Linda Moya
+94-800-S27-D4,94-800,S27,D4,M4,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Zachary Ciccone
+94-800-S27-E4,94-800,S27,E4,M4,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Zachary Ciccone
+94-801-F26-A1,94-801,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-801-F26-B2,94-801,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-801-F26-C2,94-801,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Sandy Murphy
+94-801-S27-A3,94-801,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Sandy Murphy
+94-801-S27-B4,94-801,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Sandy Murphy
+94-801-S27-C4,94-801,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Sandy Murphy
+94-801-S27-D3,94-801,S27,D3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Sandy Murphy
+94-802-F26-A,94-802,F26,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,TBA,Kristen Kurland
+94-802-F26-B,94-802,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Corey Harper
+94-802-S27-A,94-802,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Christopher Goranson
+94-803-F26-A2,94-803,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Stefan Labash
+94-804-F26-A1,94-804,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 05:00PM-06:20PM,Anand Rao
+94-804-F26-B1,94-804,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 11:00AM-12:20PM,Anand Rao
+94-806-M26-Z6,94-806,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-806-F26-A1,94-806,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Joanne Peca
+94-806-F26-B2,94-806,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",cancelled,R 06:30PM-09:20PM,
+94-807-F26-A2,94-807,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Zachary Ciccone
+94-808-F26-A,94-808,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Chris Brussalis
+94-808-S27-A,94-808,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Chris Brussalis
+94-809-M26-A,94-809,M26,A,FULL,remote,,offered,T 07:00PM-08:30PM,
+94-811-F26-A1,94-811,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,TR 02:00PM-03:20PM,
+94-811-F26-B2,94-811,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",cancelled,MW 11:00AM-12:20PM,
+94-811-S27-A4,94-811,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,
+94-813-F26-A1,94-813,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-813-F26-B2,94-813,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Jill Stephenson
+94-813-S27-A3,94-813,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-814-F26-A2,94-814,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Denise Rousseau
+94-815-S27-A4,94-815,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Anand Rao
+94-815-S27-B4,94-815,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 09:30AM-10:50AM,Anand Rao
+94-816-S27-A4,94-816,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Jordan Usdan
+94-818-S27-A3,94-818,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,William Gogolak
+94-819-S27-A3,94-819,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Mariana Escallon Barrios
+94-819-S27-B4,94-819,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Mariana Escallon Barrios
+94-820-S27-A3,94-820,S27,A3,M3,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-822-S27-A4,94-822,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Denise Rousseau
+94-823-F26-A,94-823,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Ari Lightman
+94-823-S27-A,94-823,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Ari Lightman
+94-824-F26-A2,94-824,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Traci Johnson
+94-826-S27-A3,94-826,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Rebekah Apple
+94-828-S27-A3,94-828,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Michael Bridges
+94-829-F26-A2,94-829,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,David Steier
+94-830-S27-A4,94-830,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Rebekah Apple
+94-831-S27-A,94-831,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Linda Moya
+94-834-F26-A1,94-834,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,MW 03:30PM-04:50PM; F 02:00PM-03:20PM,
+94-834-F26-A2,94-834,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 03:30PM-04:50PM,Felix Koenig
+94-834-F26-B2,94-834,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 03:30PM-04:50PM,Andrew Garin
+94-834-F26-C2,94-834,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 03:30PM-04:50PM,Andrew Garin
+94-834-F26-D2,94-834,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 03:30PM-04:50PM,Felix Koenig
+94-834-S27-A3,94-834,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 11:00AM-12:20PM,Akshaya Jha
+94-834-S27-B3,94-834,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 11:00AM-12:20PM,Akshaya Jha
+94-835-S27-A4,94-835,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 11:00AM-12:20PM,Akshaya Jha
+94-835-S27-B4,94-835,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 11:00AM-12:20PM,Akshaya Jha
+94-837-F26-A2,94-837,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Dareen Basma
+94-838-F26-A2,94-838,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Jill Stephenson
+94-838-S27-A4,94-838,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Jill Stephenson
+94-842-S27-A3,94-842,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Michael Simko
+94-842-S27-Z3,94-842,S27,Z3,M3,remote,"Pittsburgh, Pennsylvania",offered,TBA,Michael Simko
+94-843-S27-A,94-843,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,W 02:00PM-03:20PM,Brett Crawford
+94-844-F26-A2,94-844,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 12:30PM-01:50PM,Sara Kingsley
+94-844-F26-B2,94-844,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 12:30PM-01:50PM,Sara Kingsley
+94-844-S27-A4,94-844,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 11:00AM-12:20PM,Sara Kingsley
+94-844-S27-B4,94-844,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 11:00AM-12:20PM,Sara Kingsley
+94-844-S27-C4,94-844,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 11:00AM-12:20PM,Sara Kingsley
+94-845-F26-A2,94-845,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,R 06:40PM-09:30PM,Sean Qian
+94-846-S27-A3,94-846,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Anand Rao
+94-847-S27-A,94-847,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Norman Sadeh
+94-854-F26-A2,94-854,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,David Lassman
+94-854-F26-Z1,94-854,F26,Z1,M1,remote,"Pittsburgh, Pennsylvania",cancelled,R 06:30PM-09:20PM,
+94-854-S27-A4,94-854,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,David Lassman
+94-855-S27-A,94-855,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 09:30AM-10:50AM,Phillip Yu
+94-857-S27-A,94-857,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 07:00PM-08:20PM,Not listed (source placeholder)
+94-859-S27-A4,94-859,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-862-F26-A2,94-862,F26,A2,M2,remote,"Pittsburgh, Pennsylvania",offered,F 05:00PM-08:20PM; S 08:30AM-06:00PM; U 08:30AM-01:00PM,Korryn Mozisek
+94-865-S27-A3,94-865,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Mariana Escallon Barrios
+94-866-F26-A1,94-866,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Kate McCall-Kiley
+94-866-S27-A3,94-866,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,
+94-867-F26-A1,94-867,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 03:30PM-04:50PM,Peter Zhang
+94-867-F26-B1,94-867,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 02:00PM-03:20PM,Peter Zhang
+94-868-F26-A1,94-868,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Suzy Li
+94-869-M26-Z6,94-869,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",offered,T 06:00PM-08:50PM,
+94-869-S27-A4,94-869,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Dareen Basma
+94-870-F26-A1,94-870,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Christopher Goranson
+94-870-F26-B2,94-870,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Christopher Goranson
+94-870-S27-A3,94-870,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Christopher Goranson
+94-870-S27-B3,94-870,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Christopher Goranson
+94-870-S27-C4,94-870,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Christopher Goranson
+94-871-S27-A3,94-871,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-879-F26-A1,94-879,F26,A1,M1,remote,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 03:30PM-04:50PM,David Steier
+94-879-F26-B2,94-879,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 02:00PM-03:20PM,Sara Kingsley
+94-879-F26-C2,94-879,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 11:00AM-12:20PM,Sara Kingsley
+94-879-F26-D2,94-879,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM; F 03:30PM-04:50PM,David Steier
+94-879-S27-A3,94-879,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 02:00PM-03:20PM,Sara Kingsley
+94-879-S27-B4,94-879,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 11:00AM-12:20PM,Ashwin Narayan
+94-879-S27-Z3,94-879,S27,Z3,M3,remote,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM; F 05:00PM-06:20PM,David Steier
+94-881-S27-Z3,94-881,S27,Z3,M3,remote,"Pittsburgh, Pennsylvania",offered,TR 06:30PM-07:50PM,David Steier
+94-885-M26-A6,94-885,M26,A6,M6,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,
+94-885-F26-A1,94-885,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Neha Gupta
+94-889-F26-A,94-889,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Rayid Ghani
+94-891-F26-A,94-891,F26,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,J. David Riel
+94-891-S27-A,94-891,S27,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,J. David Riel
+94-893-F26-A1,94-893,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,R 06:40PM-09:30PM,Sean Qian
+94-894-F26-A,94-894,F26,A,FULL,remote,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Ganesh Mani
+94-899-F26-A,94-899,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-900-M26-I,94-900,M26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-901-M26-I,94-901,M26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-F26-A,94-902,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Felix Koenig
+94-902-F26-B,94-902,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Mohamed Farag
+94-902-F26-C,94-902,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Akshaya Jha
+94-902-F26-D,94-902,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Robert Strauss
+94-902-F26-E,94-902,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Dareen Basma
+94-902-F26-F,94-902,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Florin Manolache
+94-902-F26-G,94-902,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Brett Crawford
+94-902-F26-H,94-902,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Lei Li
+94-902-F26-I,94-902,F26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Rema Padman
+94-902-F26-J,94-902,F26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Ari Lightman
+94-902-F26-Z,94-902,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-A,94-902,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-B,94-902,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-C,94-902,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-D,94-902,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-E,94-902,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-F,94-902,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-G,94-902,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-H,94-902,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-I,94-902,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-J,94-902,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-902-S27-Z,94-902,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-F26-A,94-903,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Holly Wiberg
+94-903-F26-B,94-903,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,J. David Riel
+94-903-F26-C,94-903,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,David Held
+94-903-F26-D,94-903,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Tanvir Shaikh
+94-903-F26-E,94-903,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Sara Kingsley
+94-903-F26-F,94-903,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Christophe Combemale
+94-903-F26-G,94-903,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Peter Zhang
+94-903-F26-H,94-903,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Daniel Nagin
+94-903-F26-I,94-903,F26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-F26-J,94-903,F26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-F26-Z,94-903,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-A,94-903,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-B,94-903,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-C,94-903,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-D,94-903,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-E,94-903,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-F,94-903,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-G,94-903,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-H,94-903,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-I,94-903,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-J,94-903,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-903-S27-Z,94-903,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-A,94-904,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-B,94-904,M26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-C,94-904,M26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-D,94-904,M26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-E,94-904,M26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-F,94-904,M26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-G,94-904,M26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-H,94-904,M26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-I,94-904,M26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-J,94-904,M26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-M26-Z,94-904,M26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-A,94-904,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-B,94-904,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-C,94-904,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-D,94-904,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-E,94-904,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-F,94-904,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-G,94-904,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-H,94-904,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-I,94-904,F26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-J,94-904,F26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-F26-Z,94-904,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-A,94-904,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-B,94-904,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-C,94-904,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-D,94-904,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-E,94-904,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-F,94-904,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-G,94-904,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-H,94-904,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-I,94-904,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-J,94-904,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-904-S27-Z,94-904,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-A,94-905,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-B,94-905,M26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-C,94-905,M26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-D,94-905,M26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-E,94-905,M26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-F,94-905,M26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-G,94-905,M26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-H,94-905,M26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-I,94-905,M26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-J,94-905,M26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-M26-Z,94-905,M26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-A,94-905,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-B,94-905,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-C,94-905,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-D,94-905,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-E,94-905,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-F,94-905,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-G,94-905,F26,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-H,94-905,F26,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-I,94-905,F26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-J,94-905,F26,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-F26-Z,94-905,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-A,94-905,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-B,94-905,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-C,94-905,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-D,94-905,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-E,94-905,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-F,94-905,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-G,94-905,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-H,94-905,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-I,94-905,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-J,94-905,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+94-905-S27-Z,94-905,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+94-989-F26-A,94-989,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 09:30AM-10:50AM,Rayid Ghani
+95-422-F26-A,95-422,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Rahul Telang
+95-422-F26-B,95-422,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Rahul Telang
+95-422-S27-A,95-422,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Nuray Baltaci Akhuseyinoglu
+95-422-S27-B,95-422,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Nuray Baltaci Akhuseyinoglu
+95-433-F26-A2,95-433,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Michael Mccarthy
+95-443-F26-A,95-443,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Haller; Matthew Butkovic
+95-451-F26-A1,95-451,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 11:00AM-12:20PM,Ari Lightman
+95-451-S27-A3,95-451,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM; F 11:00AM-12:20PM,Ari Lightman
+95-452-F26-A,95-452,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Randy Trzeciak
+95-455-S27-A3,95-455,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Brett Tucker
+95-460-F26-C2,95-460,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 11:00AM-12:20PM,Mariana Escallon Barrios
+95-481-S27-A3,95-481,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Michael Bigrigg
+95-483-F26-A2,95-483,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Derrick Spooner
+95-483-S27-A4,95-483,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Derrick Spooner
+95-499-F26-A1,95-499,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Dennis Moul
+95-559-M26-A,95-559,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,
+95-564-M26-A,95-564,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,
+95-565-M26-A,95-565,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,
+95-702-F26-A,95-702,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Martin Barrett; Michael Mccarthy
+95-702-F26-B,95-702,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Martin Barrett; Michael Mccarthy
+95-702-F26-C,95-702,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Martin Barrett; Michael Mccarthy
+95-702-S27-A,95-702,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Martin Barrett; Michael Mccarthy
+95-702-S27-B,95-702,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Martin Barrett; Michael Mccarthy
+95-703-F26-A,95-703,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Janusz Szczypula
+95-703-F26-B,95-703,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Janusz Szczypula
+95-703-F26-C,95-703,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Janusz Szczypula
+95-703-F26-D,95-703,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Janusz Szczypula
+95-703-F26-E,95-703,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Janusz Szczypula
+95-703-F26-F,95-703,F26,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Janusz Szczypula
+95-705-M26-Z,95-705,M26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-706-F26-A2,95-706,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Neelam Dwivedi
+95-706-S27-Z3,95-706,S27,Z3,M3,remote,"Pittsburgh, Pennsylvania",offered,TBA,Constantine Cois
+95-710-F26-A1,95-710,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 05:00PM-06:20PM,Avinash Collis
+95-710-F26-B1,95-710,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 05:00PM-06:20PM,Avinash Collis
+95-710-F26-C1,95-710,F26,C1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 05:00PM-06:20PM,Avinash Collis
+95-710-F26-D2,95-710,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 02:00PM-03:20PM,Sadiq Salimi Rad
+95-710-S27-A3,95-710,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 05:00PM-06:20PM,Karen Clay
+95-710-S27-B3,95-710,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 05:00PM-06:20PM,Karen Clay
+95-710-S27-C3,95-710,S27,C3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM; F 05:00PM-06:20PM,Karen Clay
+95-719-F26-A2,95-719,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Jill Stephenson
+95-719-F26-B1,95-719,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Jill Stephenson
+95-719-S27-A3,95-719,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,William Gogolak
+95-719-S27-B3,95-719,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,William Gogolak
+95-719-S27-C4,95-719,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,William Gogolak
+95-719-S27-D4,95-719,S27,D4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Jill Stephenson
+95-720-M26-A,95-720,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,R 02:00PM-03:20PM,
+95-720-M26-B,95-720,M26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 02:00PM-03:20PM,
+95-720-M26-Z,95-720,M26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-720-F26-A,95-720,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-720-F26-AA,95-720,F26,AA,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Avinash Collis
+95-720-F26-Z,95-720,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Ari Lightman
+95-720-F26-ZA,95-720,F26,ZA,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,David Steier
+95-720-F26-ZB,95-720,F26,ZB,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,J. David Riel
+95-720-F26-ZC,95-720,F26,ZC,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-720-S27-Z,95-720,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Robert Beveridge
+95-720-S27-ZA,95-720,S27,ZA,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Michael Bigrigg
+95-720-S27-ZB,95-720,S27,ZB,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Sakir Yucel
+95-720-S27-ZC,95-720,S27,ZC,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Vijay Vadlamudi
+95-722-M26-Z6,95-722,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-722-F26-A2,95-722,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,J. David Riel
+95-722-F26-B2,95-722,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Ari Lightman
+95-722-F26-C2,95-722,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Ari Lightman
+95-722-F26-D2,95-722,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,J. David Riel
+95-723-F26-A2,95-723,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 03:30PM-04:50PM,Pedro Ferreira
+95-723-S27-A4,95-723,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 11:00AM-12:20PM,Ananya Sen
+95-724-M26-A,95-724,M26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,
+95-724-M26-B,95-724,M26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,
+95-728-M26-A5,95-728,M26,A5,M5,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,
+95-731-M26-A6,95-731,M26,A6,M6,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,
+95-733-F26-A2,95-733,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Michael Mccarthy
+95-733-S27-A4,95-733,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Michael Mccarthy
+95-734-F26-Z,95-734,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,J. David Riel
+95-736-F26-A1,95-736,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,M 06:30PM-09:20PM,
+95-737-M26-Z6,95-737,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-737-F26-A1,95-737,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Derrick Spooner
+95-737-F26-B2,95-737,F26,B2,M2,remote,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Dan Costa
+95-737-S27-A3,95-737,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Derrick Spooner
+95-740-F26-A,95-740,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,R 12:30PM-01:50PM,Jessi Znosko; Randy Trzeciak; Dareen Basma
+95-743-F26-A,95-743,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Haller; Matthew Butkovic
+95-743-F26-A1,95-743,F26,A1,FULL,in_person,"Pittsburgh, Pennsylvania",cancelled,T 06:30PM-09:20PM,
+95-746-F26-A2,95-746,F26,A2,M2,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,George Werbacher
+95-746-F26-B1,95-746,F26,B1,M1,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,George Werbacher
+95-746-S27-A4,95-746,S27,A4,M4,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Carly Harris
+95-747-F26-A2,95-747,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Dan Costa
+95-748-F26-Z2,95-748,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,Hasan Yasar
+95-748-S27-A3,95-748,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Hasan Yasar
+95-749-M26-Z6,95-749,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-749-S27-A4,95-749,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Robert Beveridge; Jonathan Frederick
+95-752-M26-Z,95-752,M26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-752-F26-A,95-752,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Randy Trzeciak
+95-755-S27-A3,95-755,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Brett Tucker
+95-758-F26-Z,95-758,F26,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Robert Beveridge
+95-758-S27-A,95-758,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Robert Beveridge; Jonathan Frederick
+95-759-S27-A3,95-759,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Kaden Mahsoob
+95-760-F26-A1,95-760,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 02:00PM-03:20PM,Mariana Escallon Barrios
+95-760-F26-B1,95-760,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 02:00PM-03:20PM,Mariana Escallon Barrios
+95-760-F26-C2,95-760,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 11:00AM-12:20PM,Mariana Escallon Barrios
+95-760-S27-A3,95-760,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 11:00AM-12:20PM,Jonathan Caulkins
+95-760-S27-B3,95-760,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM; F 09:30AM-10:50AM,David Choi
+95-760-S27-C3,95-760,S27,C3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 11:00AM-12:20PM,Jonathan Caulkins
+95-760-S27-D4,95-760,S27,D4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 03:30PM-04:50PM,Peter Zhang
+95-760-S27-E4,95-760,S27,E4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 03:30PM-04:50PM,Peter Zhang
+95-760-S27-F4,95-760,S27,F4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 09:30AM-10:50AM,Mariana Escallon Barrios
+95-762-F26-A2,95-762,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 09:30AM-10:50AM,Jonathan Caulkins
+95-762-F26-B2,95-762,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 09:30AM-10:50AM,Jonathan Caulkins
+95-765-F26-A,95-765,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-F26-B,95-765,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-F26-C,95-765,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-F26-D,95-765,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-F26-E,95-765,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-A,95-765,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-B,95-765,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-C,95-765,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-D,95-765,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-E,95-765,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-F,95-765,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-G,95-765,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-H,95-765,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-I,95-765,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-765-S27-J,95-765,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-767-F26-A2,95-767,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Thomas Scanlon
+95-767-F26-Z2,95-767,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,Thomas Scanlon
+95-767-S27-A3,95-767,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Thomas Scanlon
+95-767-S27-B3,95-767,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Thomas Scanlon
+95-767-S27-C4,95-767,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Thomas Scanlon
+95-767-S27-D4,95-767,S27,D4,M4,in_person,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Thomas Scanlon
+95-771-F26-A,95-771,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Michael Mccarthy
+95-771-S27-A,95-771,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Michael Mccarthy
+95-796-F26-A1,95-796,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 09:30AM-10:50AM,Eli Ben-Michael
+95-796-F26-B1,95-796,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 09:30AM-10:50AM,Andrew Garin
+95-796-F26-C1,95-796,F26,C1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 03:30PM-04:50PM,Daniel Nagin
+95-796-F26-D1,95-796,F26,D1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 09:30AM-10:50AM,Eli Ben-Michael
+95-796-F26-E1,95-796,F26,E1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 03:30PM-04:50PM,Daniel Nagin
+95-796-F26-F1,95-796,F26,F1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 03:30PM-04:50PM,Daniel Nagin
+95-796-F26-Z1,95-796,F26,Z1,M1,remote,"Pittsburgh, Pennsylvania",offered,TBA,Eli Ben-Michael
+95-799-F26-A1,95-799,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Dennis Moul
+95-799-F26-Z2,95-799,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,Dennis Moul
+95-800-S27-Z,95-800,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,T 06:30PM-07:50PM,Anand Rao
+95-802-S27-Z,95-802,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,R 06:30PM-07:50PM,Rebekah Apple
+95-808-F26-Z2,95-808,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,Brett Tucker
+95-810-M26-Z6,95-810,M26,Z6,M6,remote,"Pittsburgh, Pennsylvania",cancelled,M 06:00PM-08:50PM,
+95-810-S27-A3,95-810,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Michael Mccarthy
+95-813-F26-A1,95-813,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Jeremy Smith
+95-815-F26-A2,95-815,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Xiaoying Tu
+95-815-F26-B2,95-815,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Xiaoying Tu
+95-815-F26-C2,95-815,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Prith Sengupta
+95-818-F26-A,95-818,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Sarah Scheffler
+95-819-F26-A2,95-819,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Pedro Ferreira
+95-819-F26-B2,95-819,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Ryan Chen
+95-819-F26-C2,95-819,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Pedro Ferreira
+95-819-F26-D2,95-819,F26,D2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Nuray Baltaci Akhuseyinoglu
+95-819-S27-A4,95-819,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Ananya Sen
+95-819-S27-B4,95-819,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Lukas Bolte
+95-819-S27-C4,95-819,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Lukas Bolte
+95-820-F26-A1,95-820,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM; F 02:00PM-03:20PM,Sara Kingsley
+95-824-F26-A,95-824,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Jon Peha
+95-828-S27-A,95-828,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM; F 02:00PM-03:20PM,Woody Zhu
+95-828-S27-B,95-828,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 02:00PM-03:20PM,Woody Zhu
+95-828-S27-C,95-828,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 02:00PM-03:20PM,Woody Zhu
+95-828-S27-D,95-828,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 02:00PM-03:20PM,Prith Sengupta
+95-829-M26-Z5,95-829,M26,Z5,M5,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-835-F26-A1,95-835,F26,A1,M1,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Tanvir Shaikh
+95-835-F26-B2,95-835,F26,B2,M2,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Tanvir Shaikh
+95-835-S27-A3,95-835,S27,A3,M3,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Tanvir Shaikh
+95-835-S27-B4,95-835,S27,B4,M4,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Tanvir Shaikh
+95-841-S27-Z,95-841,S27,Z,FULL,remote,"Pittsburgh, Pennsylvania",offered,TBA,Joanne Peca
+95-843-F26-A,95-843,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,R 12:30PM-01:50PM,Sean Beggs; Dareen Basma
+95-844-F26-A1,95-844,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Thomas Scanlon
+95-844-F26-Z1,95-844,F26,Z1,M1,remote,"Pittsburgh, Pennsylvania",offered,TBA,Thomas Scanlon
+95-851-F26-A1,95-851,F26,A1,M1,hybrid,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 11:00AM-12:20PM,Ari Lightman
+95-851-S27-A3,95-851,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM; F 11:00AM-12:20PM,Ari Lightman
+95-854-S27-Z4,95-854,S27,Z4,M4,remote,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Mariana Escallon Barrios
+95-856-F26-A,95-856,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",cancelled,M 06:30PM-09:20PM,
+95-856-F26-A1,95-856,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,M 06:30PM-09:20PM,
+95-861-S27-A3,95-861,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TBA,Anna Mayo; Laurie Weingart
+95-862-F26-A,95-862,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 12:30PM-01:50PM,Hana Habib
+95-862-S27-A,95-862,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 12:30PM-01:50PM,Hana Habib; Norman Sadeh
+95-863-S27-A3,95-863,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-864-F26-A1,95-864,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 11:00AM-12:20PM,Sara Kingsley
+95-864-S27-A3,95-864,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM; F 09:30AM-10:50AM,Ashwin Narayan
+95-864-S27-B3,95-864,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; F 09:30AM-10:50AM,Ashwin Narayan
+95-864-S27-C3,95-864,S27,C3,M3,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 09:30AM-10:50AM,Ashwin Narayan
+95-865-F26-A2,95-865,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 02:00PM-03:20PM,George Chen
+95-865-F26-B2,95-865,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 02:00PM-03:20PM,George Chen
+95-865-F26-Z2,95-865,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,George Chen
+95-865-S27-A4,95-865,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM; F 05:00PM-06:20PM,George Chen
+95-865-S27-B4,95-865,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM; F 05:00PM-06:20PM,George Chen
+95-865-S27-C4,95-865,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 05:00PM-06:20PM,George Chen
+95-865-S27-D4,95-865,S27,D4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 05:00PM-06:20PM,Nuray Baltaci Akhuseyinoglu
+95-865-S27-E4,95-865,S27,E4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 05:00PM-06:20PM,Nuray Baltaci Akhuseyinoglu
+95-866-F26-A2,95-866,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 09:30AM-10:50AM,Rahul Telang
+95-866-F26-B2,95-866,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 09:30AM-10:50AM,Rahul Telang
+95-866-F26-C2,95-866,F26,C2,M2,in_person,"Pittsburgh, Pennsylvania",cancelled,MW 05:00PM-06:20PM; F 02:00PM-03:20PM,
+95-866-F26-D1,95-866,F26,D1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,TR 02:00PM-03:20PM; F 09:30AM-10:50AM,
+95-866-F26-E1,95-866,F26,E1,M1,in_person,"Pittsburgh, Pennsylvania",cancelled,TR 03:30PM-04:50PM; F 11:00AM-12:20PM,
+95-866-F26-Z2,95-866,F26,Z2,M2,remote,"Pittsburgh, Pennsylvania",offered,TBA,Ronald Stone
+95-867-S27-A,95-867,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Brian Jabarian
+95-867-S27-B,95-867,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Manuela Collis
+95-867-S27-C,95-867,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,J. David Riel
+95-868-M26-Z5,95-868,M26,Z5,M5,remote,"Pittsburgh, Pennsylvania",offered,MW 07:00PM-08:20PM,
+95-871-F26-A,95-871,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,T 12:30PM-01:50PM,Goutam Balla; Sean Beggs; Dareen Basma
+95-872-S27-A3,95-872,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Carly Harris
+95-873-S27-A4,95-873,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM; TBA,Justin Valdengo
+95-874-F26-A1,95-874,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Davis
+95-874-F26-B2,95-874,F26,B2,M2,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Davis
+95-874-F26-Z1,95-874,F26,Z1,M1,remote,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,John Davis
+95-874-S27-A4,95-874,S27,A4,M4,remote,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Davis
+95-874-S27-B3,95-874,S27,B3,M3,remote,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,John Davis
+95-876-S27-A4,95-876,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Leman Akoglu
+95-876-S27-B4,95-876,S27,B4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Leman Akoglu
+95-876-S27-C4,95-876,S27,C4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Leman Akoglu
+95-877-F26-A,95-877,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Rebekah Fitzsimmons
+95-877-S27-A,95-877,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Stefan Labash
+95-877-S27-B,95-877,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Stefan Labash
+95-877-S27-C,95-877,S27,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Stefan Labash
+95-877-S27-D,95-877,S27,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Haylee Massaro
+95-877-S27-E,95-877,S27,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Haylee Massaro
+95-877-S27-F,95-877,S27,F,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Haylee Massaro
+95-877-S27-G,95-877,S27,G,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Kim Hyatt
+95-877-S27-H,95-877,S27,H,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Kim Hyatt
+95-877-S27-I,95-877,S27,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Kim Hyatt
+95-877-S27-J,95-877,S27,J,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Rebekah Fitzsimmons
+95-877-S27-K,95-877,S27,K,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 02:00PM-03:20PM,Rebekah Fitzsimmons
+95-877-S27-L,95-877,S27,L,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 03:30PM-04:50PM,Rebekah Fitzsimmons
+95-878-S27-A,95-878,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Hana Habib
+95-879-S27-A4,95-879,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Anand Rao
+95-881-M26-Z5,95-881,M26,Z5,M5,remote,"Pittsburgh, Pennsylvania",offered,W 06:00PM-08:50PM,
+95-881-S27-A3,95-881,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Michael Bigrigg
+95-883-F26-A2,95-883,F26,A2,M2,hybrid,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Derrick Spooner
+95-883-S27-A4,95-883,S27,A4,M4,hybrid,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Derrick Spooner
+95-884-M26-Z5,95-884,M26,Z5,M5,remote,"Pittsburgh, Pennsylvania",offered,TBA,
+95-884-F26-A1,95-884,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Toby Meyer
+95-885-F26-A,95-885,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM,Raja Sooriamurthi
+95-885-S27-A,95-885,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Raja Sooriamurthi
+95-886-F26-A,95-886,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,M 12:30PM-01:50PM,Goutam Balla; Tanvir Shaikh; Dareen Basma
+95-888-F26-A1,95-888,F26,A1,M1,in_person,"Pittsburgh, Pennsylvania",offered,M 06:30PM-09:20PM,Raja Sooriamurthi
+95-888-F26-B1,95-888,F26,B1,M1,in_person,"Pittsburgh, Pennsylvania",offered,MW 11:00AM-12:20PM,Raja Sooriamurthi
+95-888-F26-C1,95-888,F26,C1,M1,in_person,"Pittsburgh, Pennsylvania",offered,W 06:30PM-09:20PM,Raja Sooriamurthi
+95-888-S27-Z4,95-888,S27,Z4,M4,remote,"Pittsburgh, Pennsylvania",offered,R 06:30PM-09:20PM,Michael Simko
+95-889-S27-A4,95-889,S27,A4,M4,in_person,"Pittsburgh, Pennsylvania",offered,T 06:30PM-09:20PM,Timur Snoke
+95-891-F26-A,95-891,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM; F 02:00PM-03:20PM,Rachel Chung
+95-891-F26-B,95-891,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM; F 03:30PM-04:50PM,Rachel Chung
+95-891-F26-C,95-891,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM; F 03:30PM-04:50PM,Rachel Chung
+95-891-S27-A,95-891,S27,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 03:30PM-04:50PM; F 03:30PM-04:50PM,Rachel Chung
+95-891-S27-B,95-891,S27,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM; F 03:30PM-04:50PM,Rachel Chung
+95-895-F26-A2,95-895,F26,A2,M2,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Prith Sengupta
+95-896-F26-A,95-896,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 09:30AM-10:50AM,Martin Barrett
+95-896-F26-B,95-896,F26,B,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Martin Barrett
+95-896-F26-C,95-896,F26,C,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 05:00PM-06:20PM,Michael Simko
+95-896-F26-D,95-896,F26,D,FULL,in_person,"Pittsburgh, Pennsylvania",offered,MW 05:00PM-06:20PM,Michael Simko
+95-896-F26-E,95-896,F26,E,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Michael Simko
+95-897-S27-A3,95-897,S27,A3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 09:30AM-10:50AM,Leman Akoglu
+95-897-S27-B3,95-897,S27,B3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 11:00AM-12:20PM,Leman Akoglu
+95-897-S27-C3,95-897,S27,C3,M3,in_person,"Pittsburgh, Pennsylvania",offered,TR 02:00PM-03:20PM,Leman Akoglu
+95-898-F26-Z1,95-898,F26,Z1,M1,remote,"Pittsburgh, Pennsylvania",offered,TBA,Constantine Cois
+95-900-M26-I,95-900,M26,I,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-900-F26-A,95-900,F26,A,FULL,in_person,"Pittsburgh, Pennsylvania",offered,TBA,
+95-900-S27-A,95-900,S27,A,FULL,hybrid,"Pittsburgh, Pennsylvania",offered,TBA,

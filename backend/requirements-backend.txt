@@ -1,0 +1,15 @@
+# Backend (M1+). Install: pip install -r backend\requirements-backend.txt
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0
+psycopg[binary]>=3.2
+pgvector>=0.3          # maps vector(384) columns (courses.embedding, student_interests.embedding)
+pydantic-settings>=2.4
+pyjwt>=2.9
+bcrypt>=4.1
+httpx>=0.27
+pytest>=8
+# Optional, only for LLM_PROVIDER=claude (imported lazily): pip install anthropic
+# M6
+pypdf>=5            # text from uploaded resume / transcript PDFs (POST /students/me/documents)
+python-multipart>=0.0.9   # FastAPI needs it to read multipart file uploads

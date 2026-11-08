@@ -1,0 +1,57 @@
+# --- Secrets and local settings (never commit) ---
+.env
+.env.*
+!.env.example
+
+# --- Documentation: publish only the README and the diagrams ---
+*.md
+!/README.md
+!/docs/DIAGRAMS.md
+docs/diagrams.html
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Node / frontend ---
+node_modules/
+dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# --- Demo helper state (written by scripts/demo_reset.py) ---
+data/demo/.seats.json
+
+# --- Logs and scratch ---
+*.log
+backend.log
+scratchpad/
+tmp/
+*.tmp
+
+# --- Model caches and local LLM files ---
+.cache/
+huggingface/
+*.gguf
+
+# --- Editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Claude Code local files ---
+.claude/
+
+# --- Backups and archives ---
+*.zip
+*.bak
