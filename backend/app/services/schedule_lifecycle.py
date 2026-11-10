@@ -162,7 +162,10 @@ def resubmit_from_rejected(db: Session, schedule: Schedule, by_student: bool = T
     new = _new_version(db, schedule.student_id, schedule.term_code, items, previous=schedule.schedule_id,
                        ai_explanation=schedule.ai_explanation, load_rationale=schedule.load_rationale, run_id=None,
                        added_by="student", baseline=schedule.ai_baseline)
-    new.edited_by_student = False
+    origins = {i.course_code: i.added_by for i in schedule.items}
+    for item in new.items:
+        item.added_by = origins[item.course_code]
+    new.edited_by_student = schedule.edited_by_student
     _record(db, new, "resubmit", _actor(by_student), {"version": new.version, "from": str(schedule.schedule_id)})
     return new
 

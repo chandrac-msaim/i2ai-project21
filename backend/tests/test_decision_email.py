@@ -97,3 +97,11 @@ def test_html_email_has_the_opening_line_header_and_footer_with_university_and_t
                         from_addr="a@b.c", schedule_url="http://x/schedule/S27")
     assert "Zeta University Data Science advising has reviewed your Spring 2027 schedule and it needs changes." in other
     assert "Carnegie Mellon" not in other and other.count("Zeta University · Faculty of Data · Master of Data Science") == 2
+
+
+def test_email_does_not_offer_unsupported_student_replies():
+    for approved in (True, False):
+        out = html(approved=approved)
+        assert "Reply in the app" not in out
+        assert "usual advising channel" in out
+        assert "replies are not supported yet" in out

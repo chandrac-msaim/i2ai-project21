@@ -167,6 +167,8 @@ def test_resubmit_from_rejected_copies_items_into_a_new_version(db):
     assert (new.version, new.status, new.previous_schedule_id) == (2, "draft", s.schedule_id)
     assert {(i.course_code, i.section_id, i.is_locked) for i in new.items} == \
            {(i.course_code, i.section_id, i.is_locked) for i in s.items}
+    assert all(i.added_by == "ai" for i in new.items)
+    assert not new.edited_by_student
     assert s.status == "rejected"  # history kept
     assert actions(db, new) == ["resubmit"] and audit_actions(db, new) == ["schedule_resubmit"]
     with pytest.raises(DraftExists):
@@ -274,6 +276,16 @@ def test_resubmit_keeps_the_ai_baseline(db):
     lifecycle.remove_item(db, s, "95-719")
     decide(db, s, "rejected")
     new = lifecycle.resubmit_from_rejected(db, s)
+    assert new.edited_by_student
     assert new.ai_baseline == s.ai_baseline and {i.course_code for i in new.items} == {"95-864"}
     lifecycle.reset(db, new)  # back to what the AI built, not to what was rejected
     assert {i.course_code for i in new.items} == {"95-864", "95-719"}
+
+
+def test_resubmit_preserves_mixed_item_sources(db):
+    s = get(db, build(db, False, "95-864"))
+    lifecycle.add_item(db, s, "95-719", "95-719-S27-A3", Decimal(6))
+    decide(db, s, "rejected")
+    new = lifecycle.resubmit_from_rejected(db, s)
+    assert {i.course_code: i.added_by for i in new.items} == {"95-864": "ai", "95-719": "student"}
+    assert new.edited_by_student

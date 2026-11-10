@@ -103,7 +103,7 @@ def render_html(facts: DecisionEmailFacts, *, approved: bool, paragraph: str, co
     <h2 style="font-size:16px;margin:24px 0 4px">What&#8217;s next</h2>
     <ol style="color:#5f6670;margin:0;padding-left:22px">{steps_html}</ol>
     <p style="margin:24px 0"><a href="{e(schedule_url)}" style="display:inline-block;background:#0e5a5c;color:#ffffff;text-decoration:none;font-weight:600;border-radius:8px;padding:14px 24px">{button}</a></p>
-    <p style="border-top:1px solid #e6e8ec;padding-top:16px;margin:0;color:#5f6670;font-size:13px">Questions? Reply in the app&#8217;s messages to reach {advisor}. If a schedule is rejected, this same email shows the reason and a link to edit the draft.</p>
+    <p style="border-top:1px solid #e6e8ec;padding-top:16px;margin:0;color:#5f6670;font-size:13px">Questions? Contact {advisor} using your university&#8217;s usual advising channel. Students can read advisor messages in the app; replies are not supported yet. If a schedule is rejected, this same email shows the reason and a link to edit the draft.</p>
     <p style="margin:12px 0 0;color:#5f6670;font-size:13px">{program_line}</p>
   </div>
 </div>
