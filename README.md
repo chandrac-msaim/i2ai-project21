@@ -83,6 +83,21 @@ This project was built with AI coding assistance (Claude Code), reviewed and tes
 
 A laptop with 16 GB RAM is comfortable.
 
+
+# Contents
+
+- [Getting Started](#getting-started)
+   -  [Install the tools (first time only)](#install-the-tools-first-time-only)
+   - [Get the code](#get-the-code)
+   - [Setup (first time only)](#setup-first-time-only)
+   - [Run the code (every time)](#run-the-code-every-time)
+- [Demo](#demo)
+- [Tests](#tests)
+- [Project layout](#project-layout)
+- [Troubleshooting](#troubleshooting)
+- [Rules for contributors](#rules-for-contributors)
+
+## Getting Started
 ### Install the tools (first time only)
 
 Skip any tool you already have. After installing, **open a new terminal** so the new programs are found.
@@ -206,7 +221,7 @@ If the download fails:
 | Download stops halfway | Run step 2 again; it resumes. If it keeps failing, delete the `models--sentence-transformers--all-MiniLM-L6-v2` folder and retry |
 | Hugging Face is blocked on your network | Ask a classmate who already has the model to zip their `models--sentence-transformers--all-MiniLM-L6-v2` folder and put it into your `.cache/huggingface/hub` folder; then set `HF_HUB_OFFLINE=1` |
 
-## Run it (every time)
+## Run the code (every time)
 
 Docker Desktop must be running (wait for "Engine running"). The app needs **two programs running at the same time,
 each in its own terminal window**. **Keep both windows open** while you use the app: closing a window stops that
