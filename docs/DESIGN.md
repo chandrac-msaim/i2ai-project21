@@ -1,7 +1,7 @@
 # Gray DI Degree Pathway Advisor — Design Notes
 
 > Living design document. Come back to this file before each work session.
-> Last updated: 8 Nov 2026 (final handover: screens, API list, demo modes, assumptions) · Status: **Step 2 done · M1–M9b done · 365 backend tests (364 without the LLM test) + 24 frontend tests pass**
+> Last updated: 10 Nov 2026 (review fixes and regression tests) · Status: **Step 2 done · M1–M9b done · 367 backend tests (365 without the two live LLM tests) + 25 frontend tests pass**
 >
 > Working rule: after every step, this file is updated (diagrams included as Mermaid) and downloaded to the project's `docs\DESIGN.md`.
 
@@ -14,7 +14,7 @@
 | 1 | Architecture and the 5 agentic functions | Done (this doc) |
 | — | Local setup (Docker Postgres 16 + pgvector 0.8.7 + pg_trgm, Mailpit) | Done, verified 7 Nov |
 | 2 | Database design: normalized schema (39 tables), loader, synthetic data, embeddings | Done (section 10), tested on PostgreSQL 16 + pgvector |
-| 3 | Code with Claude Code, milestones M1–M9, one prompt per milestone; project rules fixed up front | M1–M9 done; 365 backend tests + 24 frontend tests pass (section 11) |
+| 3 | Code with Claude Code, milestones M1–M9, one prompt per milestone; project rules fixed up front | M1–M9 done; 367 backend tests + 25 frontend tests pass (section 11) |
 | — | AI advisor chat screen | Dropped for MVP, add if time allows |
 
 Section 9 has the Windows setup (PostgreSQL + pgvector in Docker, Mailpit, Ollama, Python, Node).
@@ -82,9 +82,9 @@ A web portal for **students** and **advisors** in CMU's MS in AI Systems Managem
 > **AI suggests and explains. Rules decide. Only an advisor approves.**
 
 - **The rule engine is plain Python and SQL, with no AI.** It checks prerequisites, the 54-unit limit, seats, course level, special approval, time clashes and term offering. An AI mistake can never put an ineligible course in a schedule.
-- **The LLM** ranks, decides soft trade-offs, reads resumes, and writes explanations and emails.
+- **The LLM** extracts suggested interests and writes explanations and email wording. Deterministic scoring ranks electives; rules build and validate schedules.
 - **Every agent decision is logged** (`agent_runs`, `audit_log`). This feeds the advisor's "How the AI built this" panel and covers Gray DI's compliance ask.
-- **No custom ML model is trained.** Popularity is SQL aggregation; interest matching uses a ready-made embedding model with pgvector; reasoning uses a ready-made LLM with tool calling. This matches the Gemini review (section 6).
+- **No custom ML model is trained.** Popularity is SQL aggregation; interest matching uses a ready-made embedding model with pgvector; language generation uses a ready-made LLM; Python selects and invokes the allowed tools. This matches the Gemini review (section 6).
 
 ---
 
@@ -177,11 +177,11 @@ DECIDE: Advisor approves / rejects
 
 | Agent | Triggered by (screen → route) | Tools | LLM part | Saves to |
 |---|---|---|---|---|
-| **1 Requirements** (degree audit) | Dashboard → `GET /students/{id}/audit` | `get_program_requirements`, `get_student_history`, `get_course_waivers` | Turns free-text course notes (exemption exams, first-year rules) into rules; a human checks them once | `degree_audits` |
-| **2 Electives** (interest match) | Confirm interests / Build → `POST /students/{id}/electives` | `get_active_courses`, `search_course_content` (pgvector), `rank_courses_by_popularity`, rule-engine filter | Suggests interests from resume / undergrad degree for the student to confirm; writes "why suggested" | `elective_suggestions` |
-| **3 Schedule** (builder) | Build → `POST /schedules/build`; edits → `POST /schedules/{id}/validate` | Agent 1 + 2 outputs, `get_sections`, rule engine (build → validate → swap → retry, max N) | Fills the term to 54 units (D17; no lighter load for a low QPA); writes "How the AI built this" | `schedules`, `schedule_items` |
-| **4 Risk flags** | Submit → `POST /schedules/{id}/submit`; caseload refresh | `get_student_history`, `get_seats`, rule engine | Writes each flag's explanation and a suggested advisor action | `risk_flags` |
-| **5 Compliance** (the gate) | Submit (after Agent 4), and Approve/Reject → `POST /schedules/{id}/decision` | Rule engine (7 checks), `get_seats` (live), name removal, audit log, email | Writes the approval or rejection email from the advisor's comment | `compliance_checks`, `audit_log`, `notifications` |
+| **1 Requirements** (degree audit) | Dashboard → `GET /students/me/dashboard` | `get_program_requirements`, `get_student_history`, `get_course_waivers` | None: arithmetic over student records and configured requirements | `degree_audits` |
+| **2 Electives** (interest match) | Confirm interests / Build → `POST /students/me/documents` / `POST /schedules/build` | `get_active_courses`, `search_course_content` (pgvector), `rank_courses_by_popularity`, rule-engine filter | Suggests interests from resume / undergrad degree for the student to confirm; writes "why suggested" | `elective_suggestions` |
+| **3 Schedule** (builder) | Build → `POST /schedules/build`; edits → `POST /schedules/{id}/items` | Agent 1 + 2 outputs, `get_sections`, rule engine (build → validate → swap → retry, max N) | Only writes "How the AI built this"; rules choose courses up to 54 units based on remaining requirements | `schedules`, `schedule_items` |
+| **4 Risk flags** | Submit → `POST /schedules/{id}/submit`; advisor recheck | `get_student_history`, `get_seats`, rule engine | Writes each flag's explanation and a suggested advisor action | `risk_flags` |
+| **5 Compliance** (the gate) | Submit (after Agent 4), and Approve/Reject → `POST /advisor/schedules/{id}/decision` | Rule engine (7 checks), `get_seats` (live), name removal, audit log, email | Writes the approval or rejection email from the advisor's comment | `compliance_checks`, `audit_log`, `notifications` |
 
 ### Agent 2: scoring
 
@@ -1354,9 +1354,9 @@ If `python` points to another version, call 3.14 explicitly (`py -3.14`). If `Ac
 
 ---
 
-## 11. Final status (handover, 8 Nov 2026)
+## 11. Final status (updated 10 Nov 2026)
 
-**Tests:** backend `pytest -q` = 365 passed on a freshly loaded database (364 without the one LLM test); frontend `npm test` = 24 passed; `tsc -b` clean.
+**Tests:** backend `pytest -q` = 367 passed on a freshly loaded database (365 without the two live LLM tests); frontend `npm test` = 25 passed; `tsc -b` clean.
 Keep this number current when tests are added.
 
 ### 11.1 Screens (React, `frontend/src/pages/`)
@@ -1414,3 +1414,13 @@ Mermaid sources are in sections 3, 4 and 10 of this file.
 
 ### 11.4 Open points
 Questions for Gray DI (Fall-only versus Spring starts, the grade scale with A+ = 4.33, undergraduate courses with a petition and at most 12 units, which programs and tracks go live first, synthetic capacity and popularity data, the Capstone placement in the AIM16 plan, a hosted versus a local model, and whether students may reply to messages) are listed in the README under "Status and limits". Known gaps: the pages were checked as text only and not compared pixel by pixel with the mockups; students read advisor messages but cannot reply in the portal.
+
+
+## Review corrections (10 Nov 2026)
+
+- Advisor "Units this term" uses the current total, core and elective units. The AI explanation remains the original build explanation.
+- Rejected schedules create a new draft version preserving each item's AI/student origin, the original baseline and the existing edited flag. Copying a version is not itself a student course addition.
+- Email guidance directs students to their university advising channel; in-app messages are read-only for students.
+- Real model tests both carry the `llm` marker. The full suite includes real inference; API fixtures may still use fake LLM/email services.
+- Schedule attempts come from SCHEDULE_MAX_RETRIES (seeded to 5); other agents use one attempt. Model calls are optional and occur in decide (interest extraction), save (elective/risk wording, schedule explanation and decision email). Requirements never calls a model.
+- Withdrawal returns a submitted schedule to draft before a decision. No database schema changes are required for these corrections.

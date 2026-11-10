@@ -44,16 +44,16 @@ flowchart TB
 
 ## Agent flow
 
-Every agent runs the same loop. The LLM is called at most once per run, and only to word the result.
+Agents share the loop below, with optional model usage. Requirements uses no LLM; interest extraction calls it during decide, elective/risk wording, schedule explanation and decision emails during save. Each run allows at most one call with a fallback. Only the schedule builder retries (SCHEDULE_MAX_RETRIES, currently 5 attempts); the other agents use one attempt. Checks are agent-specific, not a rule-engine call in every agent.
 
 ```mermaid
 flowchart LR
   G["Goal<br/>(student or schedule)"] --> P["Plan<br/>read data with allowed tools"]
   P --> D["Decide<br/>rules / MiniLM ranking"]
-  D --> C{"Check<br/>rule engine"}
-  C -- "problems, attempt < 3" --> D
+  D --> C{"Check<br/>agent-specific validation"}
+  C -- "problems, attempt < configured limit" --> D
   C -- "accepted" --> S["Save<br/>to PostgreSQL"]
-  S --> E["Explain<br/>one LLM call, template fallback"]
+  S --> E["Explain<br/>template or saved guarded LLM text"]
   E --> L["Log<br/>agent_runs + audit_log"]
 ```
 
@@ -63,11 +63,12 @@ Only the student's own advisor can approve or reject a submitted schedule.
 
 ```mermaid
 stateDiagram-v2
-  [*] --> draft: Schedule agent builds (54 units)
+  [*] --> draft: Schedule agent builds (up to 54 units)
   draft --> draft: Student edits, rules re-checked
   draft --> submitted: Student submits, Compliance agent passes
   draft --> discarded: Student discards
   draft --> superseded: New version built
+  submitted --> draft: Student withdraws before decision
   submitted --> approved: Advisor approves, email sent
   submitted --> rejected: Advisor rejects with comment, email sent
   rejected --> draft: Student revises (new version)

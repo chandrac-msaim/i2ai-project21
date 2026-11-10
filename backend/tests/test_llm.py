@@ -55,6 +55,7 @@ def _ollama_up() -> bool:
         return False
 
 
+@pytest.mark.llm
 @pytest.mark.skipif(not _ollama_up(), reason="Ollama not running")
 def test_ollama_live_answer():
     result = LLMClient(provider="ollama").complete("Answer with one word.", "Say: ready", max_tokens=5,

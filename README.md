@@ -8,7 +8,7 @@ CMU MS in AI Systems Management program.
 
 ## What it does
 
-Five agents share one loop: plan, decide, check (retry up to 3 times), save, explain. Every run is logged in `agent_runs` and `audit_log`.
+Five agents share one loop: plan, decide, check (schedule attempts configured by `SCHEDULE_MAX_RETRIES`, currently 5), save, explain. Every run is logged in `agent_runs` and `audit_log`.
 
 | # | Agent | What the rules do (no AI) | Where AI is used |
 |---|-------|---------------------------|------------------|
@@ -122,8 +122,7 @@ ollama --version
 
 ## Get the code
 
-The repository is private: you must be added as a collaborator, then sign in to GitHub when Git asks (browser
-sign-in, or a personal access token as the password).
+The repository is public and can be cloned without signing in. Pushing changes requires write access or a fork.
 
 ```
 git clone https://github.com/chandrac-msaim/i2ai-project21.git graydi-advisor
@@ -292,13 +291,13 @@ It is safe to run twice, and the backend can stay running.
 ```
 cd backend
 python -m pytest -q                          # about 4 to 5 minutes
-python -m pytest -q -m "not llm"             # skips the one test that calls the LLM (use this if Ollama is off)
+python -m pytest -q -m "not llm"             # skips both tests that call the real LLM (use this if Ollama is off)
 
 cd ../frontend
 npm test                                     # frontend tests
 ```
 
-Expected: backend **365 passed** with Ollama running (364 with `-m "not llm"`), frontend 24 passed.
+Expected: backend **367 passed** with Ollama running (365 with `-m "not llm"`), frontend 25 passed.
 
 Run the backend tests on freshly loaded data. Schedules you create by hand in the app can make a few tests fail;
 run `python scripts/demo_reset.py` (and `--mode fall`) first. If you run Mailpit on another port, set
