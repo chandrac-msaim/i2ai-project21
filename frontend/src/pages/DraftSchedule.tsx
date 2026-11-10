@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState, type ReactNode } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { api, ApiError } from '../api/client'
 import {
   num,
@@ -18,7 +18,7 @@ import StudentMessages from '../components/StudentMessages'
 import ScheduleNotice from '../components/ScheduleNotice'
 import { PageShell, StudentTopBar } from '../components/TopBar'
 import { Badge, Button, Card, CardTitle, EmptyState, ErrorState, InfoBanner, MatchBar, PageSkeleton, RequiredPill, UnitMeter } from '../components/ui'
-import { fmtDate, modalityLabel, seatsLabel, unitsLabel } from '../lib/format'
+import { fmtDate, loadSummary, modalityLabel, seatsLabel, unitsLabel } from '../lib/format'
 
 const enc = encodeURIComponent
 const strip = (s: string) => s.replace(/^[A-Z_]+( [\w-]+)?: /, '') // "UNIT_LIMIT: text" -> "text"
@@ -292,10 +292,10 @@ function DraftCard(props: {
 }) {
   const { s, busy, act } = props
   const isDraft = s.status === 'draft'
-  const navigate = useNavigate()
   const [showHistory, setShowHistory] = useState(false)
   const [explain, setExplain] = useState(false)
   const total = num(s.total_units)
+  const load = loadSummary(s)
   const core = s.items.filter((i) => i.item_type === 'core')
   const electives = s.items.filter((i) => i.item_type === 'elective')
   const extended = s.max_units_extended ?? s.max_units
@@ -332,8 +332,8 @@ function DraftCard(props: {
                   action: 'Discard draft',
                   danger: true,
                   run: async () => {
+                    // stay on this page: act() reloads /schedules/current (now empty), which shows the "No schedule yet" card
                     await api.delete(`/schedules/${s.schedule_id}`)
-                    navigate('/')
                   },
                 })
               }
@@ -394,12 +394,9 @@ function DraftCard(props: {
         <div className="mt-6 space-y-3 rounded-card border border-border p-5 text-[15px]">
           <p className="font-semibold">How this schedule was built</p>
           <p className="whitespace-pre-line">{s.ai_explanation || 'No explanation was saved for this schedule.'}</p>
-          {s.load_rationale && (
-            <>
-              <p className="font-semibold">Units this term</p>
-              <p>{s.load_rationale}</p>
-            </>
-          )}
+          <p className="font-semibold">Units this term</p>
+          <p>{load.current}</p>
+          {load.aiDraft && <p className="text-muted">When the AI built the draft: {load.aiDraft}</p>}
         </div>
       )}
 

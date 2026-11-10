@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../auth'
 import { Badge } from './ui'
 
@@ -61,8 +61,12 @@ export function StudentTopBar({ name, scheduleTo }: { name?: string; scheduleTo?
 export function AdvisorTopBar({ name, title, reviews, messages }: { name?: string; title?: string; reviews?: number; messages?: number }) {
   const { logout } = useAuth()
   const navigate = useNavigate()
-  const link = ({ isActive }: { isActive: boolean }) =>
-    `rounded-control px-4 py-2 text-[15px] font-medium text-white ${isActive ? 'bg-white/15' : 'hover:bg-white/10'}`
+  const [params] = useSearchParams()
+  // The three tabs are the same caseload page with a different ?filter, which NavLink's own isActive ignores
+  // (it compares the path only), so the active tab is worked out from the query string here.
+  const filter = params.get('filter')
+  const link = (active: boolean) =>
+    `rounded-control px-4 py-2 text-[15px] font-medium text-white ${active ? 'bg-white/15' : 'hover:bg-white/10'}`
   return (
     <header className="bg-primary-dark text-white">
       <div className="mx-auto flex h-20 max-w-page items-center gap-8 px-10">
@@ -71,14 +75,14 @@ export function AdvisorTopBar({ name, title, reviews, messages }: { name?: strin
           <span className="text-[18px] font-semibold">Gray DI Degree Pathway Advisor · Advisor</span>
         </div>
         <nav className="flex items-center gap-1" aria-label="Main">
-          <NavLink to="/advisor" end className={link}>
+          <NavLink to="/advisor" end className={({ isActive }) => link(isActive && filter !== 'review' && filter !== 'unread')}>
             Caseload
           </NavLink>
           {/* the filtered caseload is the list of reviews and of unread messages (no separate pages in the MVP) */}
-          <NavLink to="/advisor?filter=review" className={() => 'rounded-control px-4 py-2 text-[15px] font-medium text-white hover:bg-white/10'}>
+          <NavLink to="/advisor?filter=review" className={({ isActive }) => link(isActive && filter === 'review')}>
             Reviews{reviews != null ? ` (${reviews})` : ''}
           </NavLink>
-          <NavLink to="/advisor?filter=unread" className={() => 'rounded-control px-4 py-2 text-[15px] font-medium text-white hover:bg-white/10'}>
+          <NavLink to="/advisor?filter=unread" className={({ isActive }) => link(isActive && filter === 'unread')}>
             Messages{messages != null ? ` (${messages})` : ''}
           </NavLink>
         </nav>

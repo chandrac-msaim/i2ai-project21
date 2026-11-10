@@ -116,7 +116,7 @@ Docker Desktop and the images used here work on both Apple Silicon and Intel Mac
 git --version
 python --version        # macOS: python3 --version
 node --version
-docker version
+docker --version
 ollama --version
 ```
 

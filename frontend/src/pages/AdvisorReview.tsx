@@ -16,7 +16,7 @@ import { useGet } from '../api/useApi'
 import { useAuth } from '../auth'
 import { AdvisorTopBar, PageShell } from '../components/TopBar'
 import { Badge, Button, Card, CardTitle, ErrorState, PageSkeleton } from '../components/ui'
-import { modalityLabel, seatsLabel, unitsLabel } from '../lib/format'
+import { loadSummary, modalityLabel, seatsLabel, unitsLabel } from '../lib/format'
 import { FLAG_LABEL } from './AdvisorCaseload'
 
 const enc = encodeURIComponent
@@ -210,6 +210,7 @@ function ScheduleCard({ d, state, setState, canRecheck }: { d: AdvisorScheduleVi
   const titles = new Map(d.removed_from_ai_draft.map((c) => [c.course_code, c.title]))
   d.changes.forEach((c) => c.replaced_course_code && c.replaced_course_title && titles.set(c.replaced_course_code, c.replaced_course_title))
   const total = num(s.total_units)
+  const load = loadSummary(s)
   const extended = total > s.max_units
   const lowSeats = s.items.filter((i) => i.seats_left != null && i.seats_left <= 3)
   const blocking = state.result?.blocking ?? s.blocking
@@ -245,7 +246,8 @@ function ScheduleCard({ d, state, setState, canRecheck }: { d: AdvisorScheduleVi
       {s.items.map((i) => <Row key={i.course_code} i={i} original={i.ai_original_course ? titles.get(i.ai_original_course) : undefined} />)}
 
       <div className="mt-4 rounded-card bg-page p-4 text-[15px]">
-        <p><strong>Units this term:</strong> {d.load_rationale || `${unitsLabel(total)}.`}</p>
+        <p><strong>Units this term:</strong> {load.current}</p>
+        {load.aiDraft && <p className="mt-1 text-muted">When the AI built the draft: {load.aiDraft}</p>}
         {extended && <p className="mt-1 text-warning-text">Extended load: {total} units is above {s.max_units}. {s.extended_allowed ? `Allowed because the QPA is above ${num(s.extended_units_min_qpa).toFixed(2)}.` : 'Not allowed for this QPA.'}</p>}
       </div>
     </Card>
